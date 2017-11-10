@@ -19,6 +19,7 @@ module top
   wire [31:0]Add32_0_Add_Output;
   wire [31:0]Add32_With_4_0_Add_With_4_Output;
   wire BranchConctrol_0_Output_Exec_Branch;
+  wire Clear;
   wire [3:0]Control_0_ALUOp;
   wire Control_0_ALUSrc;
   wire [3:0]Control_0_Branch;
@@ -28,7 +29,6 @@ module top
   wire Control_0_MemtoReg;
   wire Control_0_RegDst;
   wire Control_0_RegWrite;
-  wire Control_0_Clear;
   wire Control_0_PCWrite;
   wire Control_0_ZeroExt;
   wire [31:0]DataMem_0_Read_Data;
@@ -45,6 +45,7 @@ module top
   wire [31:0]ShiftLeft2_0_Output;
   wire [31:0]ShiftLeft2_1_Output;
   wire [31:0]SignExt_0_Output_32;
+  wire [31:0]SignExt_1_Output_32;
 
   ALUControl ALUControl_0
        (.ALUControl(ALUControl_0_ALUControl),
@@ -52,7 +53,7 @@ module top
         .Func(InstrMem_0_Instr[5:0]));
   ALU ALU_0
        (.ALU_Control_in(ALUControl_0_ALUControl),
-        .ALU_Input_1(RegFile_0_Read_Data_1),
+        .ALU_Input_1(SignExt_1_Output_32),
         .ALU_Input_2(Mux32_0_Mul_Output),
         .ALU_Output_Result(ALU_0_ALU_Output_Result),
         .ALU_Output_Sign(ALU_0_ALU_Output_Sign),
@@ -122,6 +123,9 @@ module top
         .Mux_Input_2(DataMem_0_Read_Data));
   PC PC_0
        (.Next_IP(Mux32_3_Mul_Output),
+        .CLK(CLK_in),
+        .Clear(Control_0_Clear),
+        .PCWrite(Control_0_PCWrite),
         .This_IP(PC_0_This_IP));
   RegFile RegFile_0
        (.Read_Data_1(RegFile_0_Read_Data_1),
@@ -139,5 +143,10 @@ module top
         .SL2_Output(ShiftLeft2_1_Output));
   SignExt SignExt_0
        (.Input_16(InstrMem_0_Instr[15:0]),
+        .Input_Zero_Ext(Control_0_ZeroExt),
         .Output_32(SignExt_0_Output_32));
+  SignExt SignExt_1
+       (.Input_16(InstrMem_0_Instr[10:6]),
+        .Input_Zero_Ext(Control_0_ZeroExt),
+        .Output_32(SignExt_1_Output_32));
 endmodule

@@ -31,7 +31,6 @@ module Control(
     output MemWrite,
     output ALUSrc,
     output RegWrite,
-    output Clear,
     output PCWrite,
     output ZeroExt
     );
