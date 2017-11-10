@@ -24,12 +24,15 @@ module Control(
     input [31:26] Instr,
     output RegDst,
     output Jump,
-    output Branch,
+    output [3:0]Branch,
     output MemRead,
     output MemtoReg,
-    output [1:0] ALUOp,
+    output [3:0] ALUOp,
     output MemWrite,
     output ALUSrc,
-    output RegWrite
+    output RegWrite,
+    output Clear,
+    output PCWrite,
+    output ZeroExt
     );
 endmodule

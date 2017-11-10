@@ -14,19 +14,23 @@ module top
 
   wire [3:0]ALUControl_0_ALUControl;
   wire [31:0]ALU_0_ALU_Output_Result;
+  wire ALU_0_ALU_Output_Sign;
   wire ALU_0_ALU_Output_Zero;
   wire [31:0]Add32_0_Add_Output;
   wire [31:0]Add32_With_4_0_Add_With_4_Output;
-  wire And_0_And_Output;
-  wire [1:0]Control_0_ALUOp;
+  wire BranchConctrol_0_Output_Exec_Branch;
+  wire [3:0]Control_0_ALUOp;
   wire Control_0_ALUSrc;
-  wire Control_0_Branch;
+  wire [3:0]Control_0_Branch;
   wire Control_0_Jump;
   wire Control_0_MemRead;
   wire Control_0_MemWrite;
   wire Control_0_MemtoReg;
   wire Control_0_RegDst;
   wire Control_0_RegWrite;
+  wire Control_0_Clear;
+  wire Control_0_PCWrite;
+  wire Control_0_ZeroExt;
   wire [31:0]DataMem_0_Read_Data;
   wire [31:0]InstrMem_0_Instr;
   wire [31:0]JumpAddrGen_0_JumpAddr;
@@ -51,6 +55,7 @@ module top
         .ALU_Input_1(RegFile_0_Read_Data_1),
         .ALU_Input_2(Mux32_0_Mul_Output),
         .ALU_Output_Result(ALU_0_ALU_Output_Result),
+        .ALU_Output_Sign(ALU_0_ALU_Output_Sign),
         .ALU_Output_Zero(ALU_0_ALU_Output_Zero));
   Add32 Add32_0
        (.Add_Input_1(Add32_With_4_0_Add_With_4_Output),
@@ -59,10 +64,11 @@ module top
   Add32_With_4 Add32_With_4_0
        (.Add_With_4_Input(PC_0_This_IP),
         .Add_With_4_Output(Add32_With_4_0_Add_With_4_Output));
-  And And_0
-       (.And_Input_1(Control_0_Branch),
-        .And_Input_2(ALU_0_ALU_Output_Zero),
-        .And_Output(And_0_And_Output));
+  BranchControl BranchConctrol_0
+       (.BranchControl_Input_Type(Control_0_Branch),
+        .Sign_in(ALU_0_ALU_Output_Sign),
+        .Zero_in(ALU_0_ALU_Output_Zero),
+        .BranchControl_Output_Exec_Branch(BranchConctrol_0_Output_Exec_Branch));
   Control Control_0
        (.ALUOp(Control_0_ALUOp),
         .ALUSrc(Control_0_ALUSrc),
@@ -73,7 +79,9 @@ module top
         .MemWrite(Control_0_MemWrite),
         .MemtoReg(Control_0_MemtoReg),
         .RegDst(Control_0_RegDst),
-        .RegWrite(Control_0_RegWrite));
+        .RegWrite(Control_0_RegWrite),
+        .PCWrite(Control_0_PCWrite),
+        .ZeroExt(Control_0_ZeroExt));
   DataMem DataMem_0
        (.Addr(ALU_0_ALU_Output_Result),
         .MemRead_in(Control_0_MemRead),
@@ -99,7 +107,7 @@ module top
         .Mux_Input_2(InstrMem_0_Instr[15:11]));
   Mux32 Mux32_2
        (.Mul_Output(Mux32_2_Mul_Output),
-        .Mul_Sel(And_0_And_Output),
+        .Mul_Sel(BranchConctrol_0_Output_Exec_Branch),
         .Mux_Input_1(Add32_With_4_0_Add_With_4_Output),
         .Mux_Input_2(Add32_0_Add_Output));
   Mux32 Mux32_3

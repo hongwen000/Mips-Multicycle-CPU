@@ -21,6 +21,7 @@
 
 
 module RegFile(
+    input CLK,
     input [4:0] Read_Reg_1,
     input [4:0] Read_Reg_2,
     input [4:0] Write_Reg,

@@ -22,6 +22,9 @@
 
 module PC(
     input [31:0] Next_IP,
+    input CLK,
+    input Clear,
+    input PCWrite,
     output [31:0] This_IP
     );
 endmodule

@@ -22,7 +22,7 @@
 
 module ALUControl(
     input [5:0] Func,
-    input [1:0] ALUOp_in,
+    input [3:0] ALUOp_in,
     output [3:0] ALUControl
     );
 endmodule

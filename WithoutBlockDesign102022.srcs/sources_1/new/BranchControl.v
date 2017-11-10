@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2017/11/10 00:05:33
+// Create Date: 11/11/2017 01:30:03 AM
 // Design Name: 
-// Module Name: DataMem
+// Module Name: BranchControl
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,12 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module DataMem(
-    input [31:0] Addr,
-    input CLK,
-    input [31:0] Write_Data,
-    input MemRead_in,
-    input MemWrite_in,
-    output [31:0] Read_Data
+module BranchControl(
+    input [3:0] BranchControl_Input_Type,
+    output BranchControl_Output_Exec_Branch,
+    input Sign_in,
+    input Zero_in
     );
 endmodule
