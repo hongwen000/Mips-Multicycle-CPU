@@ -26,4 +26,18 @@ module BranchControl(
     input Sign_in,
     input Zero_in
     );
+    always@(BranchControl_Input_Type or Sign_in or Zero_in)
+    begin
+        case (BranchControl_Input_Type)
+            4'b0000: BranchControl_Output_Exec_Branch = 1'b0;
+            4'b0001: BranchControl_Output_Exec_Branch = Zero_in;
+            4'b0010: BranchControl_Output_Exec_Branch = ~Zero_in;
+            4'b0011: BranchControl_Output_Exec_Branch = (~Sign_in && ~Zero_in);
+            default:
+            begin
+                BranchControl_Output_Exec_Branch = 1'b0;
+                $display("EXCEPTION@[BranchControl]:no match Branch Type Input");
+            end
+        endcase
+    end
 endmodule
