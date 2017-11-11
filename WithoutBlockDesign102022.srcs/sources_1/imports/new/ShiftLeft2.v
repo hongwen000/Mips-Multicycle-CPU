@@ -24,4 +24,5 @@ module ShiftLeft2(
     input [31:0] SL2_Input,
     output [31:0] SL2_Output
     );
+    assign SL2_Output = SL2_Input << 32'h00000002;
 endmodule

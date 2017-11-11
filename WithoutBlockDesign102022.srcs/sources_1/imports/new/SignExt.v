@@ -25,4 +25,5 @@ module SignExt(
     input Input_Zero_Ext,
     output [31:0] Output_32
     );
+    assign Output_32 = Input_Zero_Ext ? {16'b0, Input_16[15:0]} : {{16{Input_16[15]}}, Input_16[15:0]};
 endmodule

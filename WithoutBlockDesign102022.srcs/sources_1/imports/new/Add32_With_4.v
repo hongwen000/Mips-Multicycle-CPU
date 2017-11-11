@@ -24,4 +24,5 @@ module Add32_With_4(
     input [31:0] Add_With_4_Input,
     output [31:0] Add_With_4_Output
     );
+    assign Add_With_4_Output = Add_With_4_Input + 32'h00000004;
 endmodule

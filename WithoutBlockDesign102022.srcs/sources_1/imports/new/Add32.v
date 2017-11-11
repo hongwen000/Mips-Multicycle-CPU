@@ -25,4 +25,5 @@ module Add32(
     input [31:0] Add_Input_2,
     output [31:0] Add_Output
     );
+    assign Add_Output = Add_Input_1 + Add_Input_2;
 endmodule
