@@ -24,7 +24,7 @@ module ALU(
     input [31:0] ALU_Input_1,
     input [31:0] ALU_Input_2,
     input [3:0] ALU_Control_in,
-    output [31:0] ALU_Output_Result,
+    output reg [31:0] ALU_Output_Result,
     output ALU_Output_Zero,
     output ALU_Output_Sign
     );

@@ -76,6 +76,7 @@ module top
        (.ALUOp(Control_0_ALUOp),
         .ALUSrc(Control_0_ALUSrc),
         .Branch(Control_0_Branch),
+        .Funct(InstrMem_0_Instr[10:6]),
         .Instr(InstrMem_0_Instr[31:26]),
         .Jump(Control_0_Jump),
         .MemRead(Control_0_MemRead),
@@ -137,6 +138,7 @@ module top
         .This_IP(PC_0_This_IP));
   RegFile RegFile_0
        (.CLK(CLK_top),
+        .Clear(Clear_top),
         .Read_Data_1(RegFile_0_Read_Data_1),
         .Read_Data_2(RegFile_0_Read_Data_2),
         .Read_Reg_1(InstrMem_0_Instr[25:21]),

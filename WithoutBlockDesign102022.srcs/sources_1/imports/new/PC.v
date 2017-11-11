@@ -25,9 +25,9 @@ module PC(
     input CLK,
     input Clear,
     input PCWrite,
-    output [31:0] This_IP
+    output reg [31:0] This_IP
     );
-    always @(posedge CLK or posedge Clear or PCWrite)
+    always @(posedge CLK or posedge Clear)
     begin
         if(Clear)
         begin

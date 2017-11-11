@@ -23,7 +23,7 @@
 module InstrMem(
     input [31:0] ReadAddr,
     //output [31:0] Instrction,
-    output [31:0] Instr
+    output reg [31:0] Instr
     );
     reg[7:0] rom[127:0];
     initial 

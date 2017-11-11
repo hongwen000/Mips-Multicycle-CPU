@@ -22,7 +22,7 @@
 
 module BranchControl(
     input [3:0] BranchControl_Input_Type,
-    output BranchControl_Output_Exec_Branch,
+    output reg BranchControl_Output_Exec_Branch,
     input Sign_in,
     input Zero_in
     );

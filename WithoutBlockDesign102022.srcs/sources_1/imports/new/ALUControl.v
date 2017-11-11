@@ -23,7 +23,7 @@
 module ALUControl(
     input [5:0] Func,
     input [3:0] ALUOp_in,
-    output [3:0] ALUControl
+    output reg [3:0] ALUControl
     );
     wire [3:0] inner_ALUControl;
     always @(Func or ALUOp_in)

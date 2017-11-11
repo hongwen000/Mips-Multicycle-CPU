@@ -32,13 +32,13 @@ module RegFile(
     output [31:0] Read_Data_2
     );
     reg[31:0] impl_reg[1:31];
+    integer i;
     assign Read_Data_1 = (Read_Reg_1 == 0) ? 0 : impl_reg[Read_Reg_1];
     assign Read_Data_2 = (Read_Reg_2 == 0) ? 0 : impl_reg[Read_Reg_2];
     always @(negedge CLK or posedge Clear)
     begin
         if(Clear) 
         begin
-            integer i;
             for(i = 1; i < 32; i = i + 1) impl_reg[i] <= 0;
         end
         else if(RegWrite_in == 1 && Write_Reg != 0)
