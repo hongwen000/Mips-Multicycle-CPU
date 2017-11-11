@@ -19,7 +19,8 @@ module top
   wire [31:0]Add32_0_Add_Output;
   wire [31:0]Add32_With_4_0_Add_With_4_Output;
   wire BranchConctrol_0_Output_Exec_Branch;
-  wire Clear;
+  wire Clear_top;
+  wire CLK_top;
   wire [3:0]Control_0_ALUOp;
   wire Control_0_ALUSrc;
   wire [3:0]Control_0_Branch;
@@ -39,6 +40,7 @@ module top
   wire [31:0]Mux32_2_Mul_Output;
   wire [31:0]Mux32_3_Mul_Output;
   wire [31:0]Mux32_4_Mul_Output;
+  wire [31:0]Mux32_5_Mul_Output;
   wire [31:0]PC_0_This_IP;
   wire [31:0]RegFile_0_Read_Data_1;
   wire [31:0]RegFile_0_Read_Data_2;
@@ -53,7 +55,7 @@ module top
         .Func(InstrMem_0_Instr[5:0]));
   ALU ALU_0
        (.ALU_Control_in(ALUControl_0_ALUControl),
-        .ALU_Input_1(SignExt_1_Output_32),
+        .ALU_Input_1(Mux32_5_Mul_Output),
         .ALU_Input_2(Mux32_0_Mul_Output),
         .ALU_Output_Result(ALU_0_ALU_Output_Result),
         .ALU_Output_Sign(ALU_0_ALU_Output_Sign),
@@ -85,6 +87,7 @@ module top
         .ZeroExt(Control_0_ZeroExt));
   DataMem DataMem_0
        (.Addr(ALU_0_ALU_Output_Result),
+        .CLK(CLK_top),
         .MemRead_in(Control_0_MemRead),
         .MemWrite_in(Control_0_MemWrite),
         .Read_Data(DataMem_0_Read_Data),
@@ -119,16 +122,22 @@ module top
   Mux32 Mux32_4
        (.Mul_Output(Mux32_4_Mul_Output),
         .Mul_Sel(Control_0_MemtoReg),
-        .Mux_Input_1(Add32_0_Add_Output),
+        .Mux_Input_1(ALU_0_ALU_Output_Result),
         .Mux_Input_2(DataMem_0_Read_Data));
+  Mux32 Mux32_5
+       (.Mul_Output(Mux32_5_Mul_Output),
+        .Mul_Sel(Control_0_ZeroExt),
+        .Mux_Input_1(RegFile_0_Read_Data_1),
+        .Mux_Input_2(SignExt_1_Output_32));
   PC PC_0
        (.Next_IP(Mux32_3_Mul_Output),
-        .CLK(CLK_in),
-        .Clear(Control_0_Clear),
+        .CLK(CLK_top),
+        .Clear(Clear_top),
         .PCWrite(Control_0_PCWrite),
         .This_IP(PC_0_This_IP));
   RegFile RegFile_0
-       (.Read_Data_1(RegFile_0_Read_Data_1),
+       (.CLK(CLK_top),
+        .Read_Data_1(RegFile_0_Read_Data_1),
         .Read_Data_2(RegFile_0_Read_Data_2),
         .Read_Reg_1(InstrMem_0_Instr[25:21]),
         .Read_Reg_2(InstrMem_0_Instr[20:16]),
