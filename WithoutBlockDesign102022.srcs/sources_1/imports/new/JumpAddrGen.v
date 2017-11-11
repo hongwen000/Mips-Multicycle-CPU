@@ -25,4 +25,5 @@ module JumpAddrGen(
     input [31:28] PC_Plus_31_28,
     output [31:0] JumpAddr
     );
+    assign JumpAddr = {PC_Plus_31_28, Instr_27_2, 2'b00};
 endmodule

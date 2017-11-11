@@ -27,4 +27,16 @@ module PC(
     input PCWrite,
     output [31:0] This_IP
     );
+    always @(posedge CLK or posedge Clear or PCWrite)
+    begin
+        if(Clear)
+        begin
+            This_IP <= 0;
+        end
+        else
+        if(PCWrite == 1)
+        begin
+            This_IP <= Next_IP;
+        end
+    end
 endmodule
