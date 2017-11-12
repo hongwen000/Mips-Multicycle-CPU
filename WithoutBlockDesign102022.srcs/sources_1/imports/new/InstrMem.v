@@ -28,7 +28,7 @@ module InstrMem(
     reg[7:0] rom[127:0];
     initial 
     begin
-        $readmemb("rom.txt", rom);
+        $readmemb("D:/rom.txt", rom);
     end
     always @(ReadAddr)
     begin

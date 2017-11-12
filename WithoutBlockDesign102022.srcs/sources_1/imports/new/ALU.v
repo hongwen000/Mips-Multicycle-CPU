@@ -52,7 +52,7 @@ module ALU(
             default:
             begin
                 ALU_Output_Result = 32'h00000000;
-                $display("EXCEPTION@[ALU]:no match ALU Control Input");
+                $display("EXCEPTION@[ALU]:no match ALU Control Input:%d", ALU_Control_in);
             end
         endcase
     end

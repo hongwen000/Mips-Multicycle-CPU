@@ -26,5 +26,5 @@ module Mux32(
     input Mul_Sel,
     output [31:0] Mul_Output
     );
-    assign Mul_Output = Mul_Sel ? Mux_Input_1 : Mux_Input_2;
+    assign Mul_Output = Mul_Sel? Mux_Input_2 : Mux_Input_1;
 endmodule

@@ -35,7 +35,7 @@ module RegFile(
     integer i;
     assign Read_Data_1 = (Read_Reg_1 == 0) ? 0 : impl_reg[Read_Reg_1];
     assign Read_Data_2 = (Read_Reg_2 == 0) ? 0 : impl_reg[Read_Reg_2];
-    always @(negedge CLK or posedge Clear)
+    always @(negedge CLK or negedge Clear)
     begin
         if(Clear) 
         begin

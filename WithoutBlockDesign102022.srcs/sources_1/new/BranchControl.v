@@ -36,7 +36,7 @@ module BranchControl(
             default:
             begin
                 BranchControl_Output_Exec_Branch = 1'b0;
-                $display("EXCEPTION@[BranchControl]:no match Branch Type Input");
+                $display("EXCEPTION@[BranchControl]:no match Branch Type Input:%b", BranchControl_Input_Type);
             end
         endcase
     end
