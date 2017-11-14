@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="75800001fs"></ZoomEndTime>
+      <Cursor1Time time="24250000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="215"></NameColumnWidth>
+      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="37" />
+   <wvobject fp_name="/test/Clear_test" type="logic">
+      <obj_property name="ElementShortName">Clear_test</obj_property>
+      <obj_property name="ObjectShortName">Clear_test</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/CLK_test" type="logic">
+      <obj_property name="ElementShortName">CLK_test</obj_property>
+      <obj_property name="ObjectShortName">CLK_test</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/PC_test_out" type="array">
+      <obj_property name="ElementShortName">PC_test_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_test_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/ALUControl_0_ALUControl" type="array">
+      <obj_property name="ElementShortName">ALUControl_0_ALUControl[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUControl_0_ALUControl[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/ALU_0_ALU_Output_Result" type="array">
+      <obj_property name="ElementShortName">ALU_0_ALU_Output_Result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_0_ALU_Output_Result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/ALU_0_ALU_Output_Sign" type="logic">
+      <obj_property name="ElementShortName">ALU_0_ALU_Output_Sign</obj_property>
+      <obj_property name="ObjectShortName">ALU_0_ALU_Output_Sign</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/ALU_0_ALU_Output_Zero" type="logic">
+      <obj_property name="ElementShortName">ALU_0_ALU_Output_Zero</obj_property>
+      <obj_property name="ObjectShortName">ALU_0_ALU_Output_Zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Add32_0_Add_Output" type="array">
+      <obj_property name="ElementShortName">Add32_0_Add_Output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Add32_0_Add_Output[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Add32_With_4_0_Add_With_4_Output" type="array">
+      <obj_property name="ElementShortName">Add32_With_4_0_Add_With_4_Output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Add32_With_4_0_Add_With_4_Output[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/BranchConctrol_0_Output_Exec_Branch" type="logic">
+      <obj_property name="ElementShortName">BranchConctrol_0_Output_Exec_Branch</obj_property>
+      <obj_property name="ObjectShortName">BranchConctrol_0_Output_Exec_Branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0_ALUOp" type="array">
+      <obj_property name="ElementShortName">Control_0_ALUOp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Control_0_ALUOp[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0_ALUSrc" type="logic">
+      <obj_property name="ElementShortName">Control_0_ALUSrc</obj_property>
+      <obj_property name="ObjectShortName">Control_0_ALUSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0_Branch" type="array">
+      <obj_property name="ElementShortName">Control_0_Branch[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Control_0_Branch[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0_Jump" type="logic">
+      <obj_property name="ElementShortName">Control_0_Jump</obj_property>
+      <obj_property name="ObjectShortName">Control_0_Jump</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0_MemRead" type="logic">
+      <obj_property name="ElementShortName">Control_0_MemRead</obj_property>
+      <obj_property name="ObjectShortName">Control_0_MemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0_MemWrite" type="logic">
+      <obj_property name="ElementShortName">Control_0_MemWrite</obj_property>
+      <obj_property name="ObjectShortName">Control_0_MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0_MemtoReg" type="logic">
+      <obj_property name="ElementShortName">Control_0_MemtoReg</obj_property>
+      <obj_property name="ObjectShortName">Control_0_MemtoReg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0_RegDst" type="logic">
+      <obj_property name="ElementShortName">Control_0_RegDst</obj_property>
+      <obj_property name="ObjectShortName">Control_0_RegDst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0_RegWrite" type="logic">
+      <obj_property name="ElementShortName">Control_0_RegWrite</obj_property>
+      <obj_property name="ObjectShortName">Control_0_RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0_PCWrite" type="logic">
+      <obj_property name="ElementShortName">Control_0_PCWrite</obj_property>
+      <obj_property name="ObjectShortName">Control_0_PCWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0_ZeroExt" type="logic">
+      <obj_property name="ElementShortName">Control_0_ZeroExt</obj_property>
+      <obj_property name="ObjectShortName">Control_0_ZeroExt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/DataMem_0_Read_Data" type="array">
+      <obj_property name="ElementShortName">DataMem_0_Read_Data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataMem_0_Read_Data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/InstrMem_0_Instr" type="array">
+      <obj_property name="ElementShortName">InstrMem_0_Instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">InstrMem_0_Instr[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/JumpAddrGen_0_JumpAddr" type="array">
+      <obj_property name="ElementShortName">JumpAddrGen_0_JumpAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">JumpAddrGen_0_JumpAddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Mux32_0_Mul_Output" type="array">
+      <obj_property name="ElementShortName">Mux32_0_Mul_Output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Mux32_0_Mul_Output[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Mux32_1_Mul_Output" type="array">
+      <obj_property name="ElementShortName">Mux32_1_Mul_Output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Mux32_1_Mul_Output[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Mux32_2_Mul_Output" type="array">
+      <obj_property name="ElementShortName">Mux32_2_Mul_Output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Mux32_2_Mul_Output[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Mux32_3_Mul_Output" type="array">
+      <obj_property name="ElementShortName">Mux32_3_Mul_Output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Mux32_3_Mul_Output[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Mux32_4_Mul_Output" type="array">
+      <obj_property name="ElementShortName">Mux32_4_Mul_Output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Mux32_4_Mul_Output[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Mux32_5_Mul_Output" type="array">
+      <obj_property name="ElementShortName">Mux32_5_Mul_Output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Mux32_5_Mul_Output[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/PC_0_This_IP" type="array">
+      <obj_property name="ElementShortName">PC_0_This_IP[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_0_This_IP[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/RegFile_0_Read_Data_1" type="array">
+      <obj_property name="ElementShortName">RegFile_0_Read_Data_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RegFile_0_Read_Data_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/RegFile_0_Read_Data_2" type="array">
+      <obj_property name="ElementShortName">RegFile_0_Read_Data_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RegFile_0_Read_Data_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/ShiftLeft2_0_Output" type="array">
+      <obj_property name="ElementShortName">ShiftLeft2_0_Output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ShiftLeft2_0_Output[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/ShiftLeft2_1_Output" type="array">
+      <obj_property name="ElementShortName">ShiftLeft2_1_Output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ShiftLeft2_1_Output[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/SignExt_0_Output_32" type="array">
+      <obj_property name="ElementShortName">SignExt_0_Output_32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SignExt_0_Output_32[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/SignExt_1_Output_32" type="array">
+      <obj_property name="ElementShortName">SignExt_1_Output_32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SignExt_1_Output_32[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -32,7 +32,11 @@ module BranchControl(
             4'b0000: BranchControl_Output_Exec_Branch = 1'b0;
             4'b0001: BranchControl_Output_Exec_Branch = Zero_in;
             4'b0010: BranchControl_Output_Exec_Branch = ~Zero_in;
-            4'b0011: BranchControl_Output_Exec_Branch = (~Sign_in && ~Zero_in);
+            4'b0011: 
+            begin
+                $display("INFO@[BranchControl]:Exec BGTZ:%b, %b", Sign_in, Zero_in);
+                BranchControl_Output_Exec_Branch = (~Sign_in && ~Zero_in);
+            end
             default:
             begin
                 BranchControl_Output_Exec_Branch = 1'b0;

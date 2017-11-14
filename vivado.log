@@ -1,0 +1,2244 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Tue Nov 14 22:41:20 2017
+# Process ID: 13068
+# Current directory: C:/Users/lixin/Desktop/MipsSingleCycleCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30064 C:\Users\lixin\Desktop\MipsSingleCycleCPU\WithoutBlockDesign102022.xpr
+# Log file: C:/Users/lixin/Desktop/MipsSingleCycleCPU/vivado.log
+# Journal file: C:/Users/lixin/Desktop/MipsSingleCycleCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 858.105 ; gain = 57.504
+update_compile_order -fileset sources_1
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/clk_2khz.v w ]
+add_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/clk_2khz.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/7SegDisplay.v w ]
+add_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/7SegDisplay.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/7SegDisplay.v] -no_script -reset -force -quiet
+remove_files  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/7SegDisplay.v
+file delete -force C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/7SegDisplay.v
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v w ]
+add_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Input_OBtn.v w ]
+add_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Input_OBtn.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v w ]
+add_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/clk_2khz.v] -no_script -reset -force -quiet
+remove_files  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/clk_2khz.v
+file delete -force C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/clk_2khz.v
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/TestIO.v w ]
+add_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/TestIO.v
+update_compile_order -fileset sources_1
+set_property top TestIO [current_fileset]
+update_compile_order -fileset sources_1
+file mkdir C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1
+file mkdir C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc w ]
+add_files -fileset constrs_1 C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc
+set_property target_constrs_file C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc [current_fileset -constrset]
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 1588.859 ; gain = 0.684
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.129 . Memory (MB): peak = 1588.859 ; gain = 0.684
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:50 ; elapsed = 00:00:38 . Memory (MB): peak = 1766.148 ; gain = 676.934
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 00:17:09 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 00:17:09 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 00:19:26 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 00:19:26 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 00:22:33 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 00:22:33 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 00:23:19 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 00:23:19 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 00:24:23 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 00:24:23 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 00:25:04 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 00:25:04 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 00:26:25 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 00:26:25 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 00:26:55 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 00:26:55 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 00:27:49 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 00:27:49 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 00:32:14 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 00:32:14 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU/.Xil/Vivado-13068-DESKTOP-5Q0ADMK/dcp3/TestIO.xdc]
+Finished Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU/.Xil/Vivado-13068-DESKTOP-5Q0ADMK/dcp3/TestIO.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.165 . Memory (MB): peak = 2739.184 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.166 . Memory (MB): peak = 2739.184 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 2808.793 ; gain = 76.957
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Select[3]} {Select[2]} {Select[1]} {Select[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Segment[7]} {Segment[6]} {Segment[5]} {Segment[4]} {Segment[3]} {Segment[2]} {Segment[1]} {Segment[0]}]]
+place_ports Func_Choose V16
+set_property IOSTANDARD LVCMOS33 [get_ports [list Func_Choose]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Btn_Press]]
+place_ports Btn_Press W19
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 00:39:01 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 00:39:01 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 00:43:14 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 00:43:14 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 00:47:12 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 00:47:12 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 00:48:33 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 00:48:34 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Nov 15 00:50:49 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.3
+  **** Build date : Oct  4 2017-20:12:17
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+open_hw_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3650.336 ; gain = 840.660
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/TestIO.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/TestIO.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/simTestIO.v w ]
+add_files -fileset sim_1 C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/simTestIO.v
+update_compile_order -fileset sim_1
+set_property top simTestIO [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simTestIO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simTestIO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_slow
+ERROR: [VRFC 10-91] SIZE is not declared [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:30]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register CLK_slow is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:31]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register CLK_slow is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:31]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register CLK_slow is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:37]
+ERROR: [VRFC 10-91] clkout is not declared [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:37]
+ERROR: [VRFC 10-1040] module clk_slow ignored due to previous errors [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simTestIO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simTestIO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_slow
+ERROR: [VRFC 10-91] SIZE is not declared [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:30]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register CLK_slow is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:31]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register CLK_slow is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:31]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register CLK_slow is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:37]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register CLK_slow is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:37]
+ERROR: [VRFC 10-1040] module clk_slow ignored due to previous errors [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 01:02:13 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 01:02:13 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simTestIO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simTestIO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_slow
+ERROR: [VRFC 10-91] SIZE is not declared [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:30]
+ERROR: [VRFC 10-1040] module clk_slow ignored due to previous errors [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simTestIO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simTestIO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_slow
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/simTestIO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simTestIO
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Clear is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/simTestIO.v:31]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Clear is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/simTestIO.v:31]
+ERROR: [VRFC 10-1040] module simTestIO ignored due to previous errors [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/simTestIO.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698698A
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simTestIO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simTestIO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_slow
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/simTestIO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simTestIO
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Clear is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/simTestIO.v:31]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Clear is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/simTestIO.v:31]
+ERROR: [VRFC 10-1040] module simTestIO ignored due to previous errors [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/simTestIO.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simTestIO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simTestIO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_slow
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/simTestIO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simTestIO
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 5391914f04384d439ce699cdb19de331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simTestIO_behav xil_defaultlib.simTestIO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <CLK_slow> not found while processing module instance <CLK_slow_test> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/simTestIO.v:38]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simTestIO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simTestIO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_slow
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/simTestIO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simTestIO
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 5391914f04384d439ce699cdb19de331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simTestIO_behav xil_defaultlib.simTestIO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_slow
+Compiling module xil_defaultlib.simTestIO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simTestIO_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xsim.dir/simTestIO_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xsim.dir/simTestIO_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Nov 15 01:05:48 2017. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2017.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 15 01:05:48 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3684.129 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simTestIO_behav -key {Behavioral:sim_1:Functional:simTestIO} -tclbatch {simTestIO.tcl} -view {C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg
+WARNING: Simulation object /test/Clear_test was not found in the design.
+WARNING: Simulation object /test/CLK_test was not found in the design.
+WARNING: Simulation object /test/PC_test_out was not found in the design.
+WARNING: Simulation object /test/top_0/InstrMem_0_Instr was not found in the design.
+WARNING: Simulation object /test/top_0/ALU_0/ALU_Input_1 was not found in the design.
+WARNING: Simulation object /test/top_0/ALU_0/ALU_Input_2 was not found in the design.
+WARNING: Simulation object /test/top_0/ALU_0_ALU_Output_Result was not found in the design.
+WARNING: Simulation object /test/top_0/RegFile_0/impl_reg was not found in the design.
+WARNING: Simulation object /test/top_0/ALUControl_0_ALUControl was not found in the design.
+WARNING: Simulation object /test/top_0/Add32_0_Add_Output was not found in the design.
+WARNING: Simulation object /test/top_0/Add32_With_4_0_Add_With_4_Output was not found in the design.
+WARNING: Simulation object /test/top_0/BranchConctrol_0_Output_Exec_Branch was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_ALUOp was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_ALUSrc was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_Branch was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_RegDst was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_RegWrite was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_PCWrite was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_ZeroExt was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0/ReadShamt was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0/Instr was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0/Funct was not found in the design.
+WARNING: Simulation object /test/top_0/DataMem_0_Read_Data was not found in the design.
+WARNING: Simulation object /test/top_0/JumpAddrGen_0_JumpAddr was not found in the design.
+WARNING: Simulation object /test/top_0/PC_0_This_IP was not found in the design.
+WARNING: Simulation object /test/top_0/RegFile_0_Read_Data_1 was not found in the design.
+WARNING: Simulation object /test/top_0/RegFile_0_Read_Data_2 was not found in the design.
+WARNING: Simulation object /test/top_0/ALU_0/ALU_Control_in was not found in the design.
+WARNING: Simulation object /test/top_0/ALU_0/ALU_Output_Result was not found in the design.
+WARNING: Simulation object /test/top_0/ALU_0/ALU_Output_Zero was not found in the design.
+WARNING: Simulation object /test/top_0/ALU_0/ALU_Output_Sign was not found in the design.
+WARNING: Simulation object /test/top_0/ALUControl_0/ALUOp_in was not found in the design.
+WARNING: Simulation object /test/top_0/ALUControl_0/Func was not found in the design.
+WARNING: Simulation object /test/top_0/ALUControl_0/ALUControl was not found in the design.
+WARNING: Simulation object /test/top_0/Mux32_5/Mux_Input_1 was not found in the design.
+WARNING: Simulation object /test/top_0/Mux32_5/Mux_Input_2 was not found in the design.
+WARNING: Simulation object /test/top_0/Mux32_5/Mul_Sel was not found in the design.
+WARNING: Simulation object /test/top_0/Mux32_5/Mul_Output was not found in the design.
+WARNING: Simulation object /test/top_0/SignExt_1/Input_16 was not found in the design.
+WARNING: Simulation object /test/top_0/SignExt_1/Input_Zero_Ext was not found in the design.
+WARNING: Simulation object /test/top_0/SignExt_1/Output_32 was not found in the design.
+WARNING: Simulation object /test/top_0/Mux32_1/Mux_Input_1 was not found in the design.
+WARNING: Simulation object /test/top_0/Mux32_1/Mux_Input_2 was not found in the design.
+WARNING: Simulation object /test/top_0/Mux32_1/Mul_Sel was not found in the design.
+WARNING: Simulation object /test/top_0/Mux32_1/Mul_Output was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_Jump was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_MemRead was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_MemWrite was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_MemtoReg was not found in the design.
+WARNING: Simulation object /test/top_0/DataMem_0/ram was not found in the design.
+source simTestIO.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simTestIO_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 3713.004 ; gain = 28.902
+run 60 ns
+add_wave {{/simTestIO/CLK}} {{/simTestIO/Clear}} {{/simTestIO/CLK_slow}} 
+run 60 ns
+create_wave_config; add_wave /; set_property needs_save false [current_wave_config]
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3751.859 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simTestIO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simTestIO_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 5391914f04384d439ce699cdb19de331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simTestIO_behav xil_defaultlib.simTestIO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 3751.859 ; gain = 0.000
+run 60 ms
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:51 ; elapsed = 00:00:24 . Memory (MB): peak = 3751.859 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 01:10:52 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 01:10:52 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU/.Xil/Vivado-13068-DESKTOP-5Q0ADMK/dcp5/TestIO.xdc]
+Finished Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU/.Xil/Vivado-13068-DESKTOP-5Q0ADMK/dcp5/TestIO.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.281 . Memory (MB): peak = 3751.859 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.282 . Memory (MB): peak = 3751.859 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 3755.332 ; gain = 3.473
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Nov 15 01:14:36 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/TestIO.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Nov 15 01:18:45 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 01:18:45 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/TestIO.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 01:26:26 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 01:26:26 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Nov 15 01:27:23 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 01:27:23 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/TestIO.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698698A
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v w ]
+add_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: TestIO
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 3930.145 ; gain = 165.891
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TestIO' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/TestIO.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_slow' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clk_slow' (1#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:23]
+INFO: [Synth 8-638] synthesizing module 'Input_OBtn' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Input_OBtn.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Input_OBtn' (2#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Input_OBtn.v:23]
+INFO: [Synth 8-638] synthesizing module 'Display_7Seg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:50]
+INFO: [Synth 8-226] default block is never used [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:67]
+INFO: [Synth 8-256] done synthesizing module 'Display_7Seg' (3#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:23]
+WARNING: [Synth 8-6014] Unused sequential element ifPutData_reg was removed.  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/TestIO.v:37]
+INFO: [Synth 8-256] done synthesizing module 'TestIO' (4#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/TestIO.v:23]
+WARNING: [Synth 8-3331] design clk_slow has unconnected port Clear
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 3986.453 ; gain = 222.199
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 3986.453 ; gain = 222.199
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc]
+WARNING: [Vivado 12-507] No nets matched 'Clear_IBUF'. [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:00 ; elapsed = 00:00:56 . Memory (MB): peak = 4181.766 ; gain = 417.512
+13 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:00:56 . Memory (MB): peak = 4181.766 ; gain = 417.512
+set_property top UserInterface [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+ERROR: [Synth 8-1002] Func_Choose1 is not a constant [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v:36]
+ERROR: [Synth 8-1002] Func_Choose0 is not a constant [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v:36]
+INFO: [Synth 8-2350] module UserInterface ignored due to previous errors [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v:23]
+Failed to read verilog 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v'
+refresh_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:41 . Memory (MB): peak = 4217.633 ; gain = 35.867
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+ERROR: [Synth 8-1852] concurrent assignment to a non-net Func_Choose is not permitted [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v:37]
+INFO: [Synth 8-2350] module UserInterface ignored due to previous errors [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v:23]
+Failed to read verilog 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v'
+refresh_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 4226.793 ; gain = 9.047
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:40 ; elapsed = 00:00:39 . Memory (MB): peak = 4226.984 ; gain = 0.164
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'UserInterface' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v:23]
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:12]
+INFO: [Synth 8-638] synthesizing module 'ALUControl' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALUControl' (1#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (2#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'Add32' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Add32' (3#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v:23]
+INFO: [Synth 8-638] synthesizing module 'Add32_With_4' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Add32_With_4' (4#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v:23]
+INFO: [Synth 8-638] synthesizing module 'BranchControl' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v:23]
+INFO: [Synth 8-256] done synthesizing module 'BranchControl' (5#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v:23]
+INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Control' (6#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:23]
+INFO: [Synth 8-638] synthesizing module 'DataMem' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v:23]
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "ram_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'DataMem' (7#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v:23]
+INFO: [Synth 8-638] synthesizing module 'InstrMem' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'D:/rom.txt' is read successfully [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v:31]
+INFO: [Synth 8-256] done synthesizing module 'InstrMem' (8#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v:23]
+INFO: [Synth 8-638] synthesizing module 'JumpAddrGen' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v:23]
+INFO: [Synth 8-256] done synthesizing module 'JumpAddrGen' (9#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v:23]
+INFO: [Synth 8-638] synthesizing module 'Mux32' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Mux32' (10#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v:23]
+INFO: [Synth 8-638] synthesizing module 'PC' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PC' (11#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v:23]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (12#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:23]
+INFO: [Synth 8-638] synthesizing module 'ShiftLeft2' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ShiftLeft2' (13#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v:23]
+INFO: [Synth 8-638] synthesizing module 'SignExt' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SignExt' (14#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (15#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:12]
+INFO: [Synth 8-638] synthesizing module 'clk_slow' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clk_slow' (16#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:23]
+INFO: [Synth 8-638] synthesizing module 'Input_OBtn' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Input_OBtn.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Input_OBtn' (17#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Input_OBtn.v:23]
+INFO: [Synth 8-638] synthesizing module 'Display_7Seg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:50]
+INFO: [Synth 8-226] default block is never used [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:67]
+INFO: [Synth 8-256] done synthesizing module 'Display_7Seg' (18#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'UserInterface' (19#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v:23]
+WARNING: [Synth 8-3331] design clk_slow has unconnected port Clear
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:51 ; elapsed = 00:00:50 . Memory (MB): peak = 4334.188 ; gain = 107.367
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:54 ; elapsed = 00:00:53 . Memory (MB): peak = 4334.188 ; gain = 107.367
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc]
+WARNING: [Vivado 12-507] No nets matched 'Clear_IBUF'. [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Func_Choose'. [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Func_Choose'. [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:01:29 ; elapsed = 00:01:18 . Memory (MB): peak = 4430.031 ; gain = 203.211
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Wed Nov 15 02:19:57 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Wed Nov 15 02:22:34 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+current_design impl_1
+refresh_design
+INFO: [Netlist 29-17] Analyzing 1152 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU/.Xil/Vivado-13068-DESKTOP-5Q0ADMK/dcp11/UserInterface.xdc]
+Finished Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU/.Xil/Vivado-13068-DESKTOP-5Q0ADMK/dcp11/UserInterface.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4430.031 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4430.031 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:28 . Memory (MB): peak = 4430.031 ; gain = 0.000
+open_report: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 4430.031 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Nov 15 02:24:56 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'simTestIO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj simTestIO_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 5391914f04384d439ce699cdb19de331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simTestIO_behav xil_defaultlib.simTestIO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simTestIO_behav -key {Behavioral:sim_1:Functional:simTestIO} -tclbatch {simTestIO.tcl} -view {C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg
+WARNING: Simulation object /test/Clear_test was not found in the design.
+WARNING: Simulation object /test/CLK_test was not found in the design.
+WARNING: Simulation object /test/PC_test_out was not found in the design.
+WARNING: Simulation object /test/top_0/InstrMem_0_Instr was not found in the design.
+WARNING: Simulation object /test/top_0/ALU_0/ALU_Input_1 was not found in the design.
+WARNING: Simulation object /test/top_0/ALU_0/ALU_Input_2 was not found in the design.
+WARNING: Simulation object /test/top_0/ALU_0_ALU_Output_Result was not found in the design.
+WARNING: Simulation object /test/top_0/RegFile_0/impl_reg was not found in the design.
+WARNING: Simulation object /test/top_0/ALUControl_0_ALUControl was not found in the design.
+WARNING: Simulation object /test/top_0/Add32_0_Add_Output was not found in the design.
+WARNING: Simulation object /test/top_0/Add32_With_4_0_Add_With_4_Output was not found in the design.
+WARNING: Simulation object /test/top_0/BranchConctrol_0_Output_Exec_Branch was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_ALUOp was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_ALUSrc was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_Branch was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_RegDst was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_RegWrite was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_PCWrite was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_ZeroExt was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0/ReadShamt was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0/Instr was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0/Funct was not found in the design.
+WARNING: Simulation object /test/top_0/DataMem_0_Read_Data was not found in the design.
+WARNING: Simulation object /test/top_0/JumpAddrGen_0_JumpAddr was not found in the design.
+WARNING: Simulation object /test/top_0/PC_0_This_IP was not found in the design.
+WARNING: Simulation object /test/top_0/RegFile_0_Read_Data_1 was not found in the design.
+WARNING: Simulation object /test/top_0/RegFile_0_Read_Data_2 was not found in the design.
+WARNING: Simulation object /test/top_0/ALU_0/ALU_Control_in was not found in the design.
+WARNING: Simulation object /test/top_0/ALU_0/ALU_Output_Result was not found in the design.
+WARNING: Simulation object /test/top_0/ALU_0/ALU_Output_Zero was not found in the design.
+WARNING: Simulation object /test/top_0/ALU_0/ALU_Output_Sign was not found in the design.
+WARNING: Simulation object /test/top_0/ALUControl_0/ALUOp_in was not found in the design.
+WARNING: Simulation object /test/top_0/ALUControl_0/Func was not found in the design.
+WARNING: Simulation object /test/top_0/ALUControl_0/ALUControl was not found in the design.
+WARNING: Simulation object /test/top_0/Mux32_5/Mux_Input_1 was not found in the design.
+WARNING: Simulation object /test/top_0/Mux32_5/Mux_Input_2 was not found in the design.
+WARNING: Simulation object /test/top_0/Mux32_5/Mul_Sel was not found in the design.
+WARNING: Simulation object /test/top_0/Mux32_5/Mul_Output was not found in the design.
+WARNING: Simulation object /test/top_0/SignExt_1/Input_16 was not found in the design.
+WARNING: Simulation object /test/top_0/SignExt_1/Input_Zero_Ext was not found in the design.
+WARNING: Simulation object /test/top_0/SignExt_1/Output_32 was not found in the design.
+WARNING: Simulation object /test/top_0/Mux32_1/Mux_Input_1 was not found in the design.
+WARNING: Simulation object /test/top_0/Mux32_1/Mux_Input_2 was not found in the design.
+WARNING: Simulation object /test/top_0/Mux32_1/Mul_Sel was not found in the design.
+WARNING: Simulation object /test/top_0/Mux32_1/Mul_Output was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_Jump was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_MemRead was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_MemWrite was not found in the design.
+WARNING: Simulation object /test/top_0/Control_0_MemtoReg was not found in the design.
+WARNING: Simulation object /test/top_0/DataMem_0/ram was not found in the design.
+source simTestIO.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simTestIO_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 4430.031 ; gain = 0.000
+set_property top test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add32_With_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstrMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JumpAddrGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2458] undeclared symbol PC_top_out, assumed default net type wire [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 5391914f04384d439ce699cdb19de331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port PC_top_out on this module [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/test.v:43]
+ERROR: [VRFC 10-2063] Module <ALUControl> not found while processing module instance <ALUControl_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:61]
+ERROR: [VRFC 10-2063] Module <ALU> not found while processing module instance <ALU_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:65]
+ERROR: [VRFC 10-2063] Module <Add32> not found while processing module instance <Add32_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:72]
+ERROR: [VRFC 10-2063] Module <Add32_With_4> not found while processing module instance <Add32_With_4_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:76]
+ERROR: [VRFC 10-2063] Module <BranchControl> not found while processing module instance <BranchConctrol_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:79]
+ERROR: [VRFC 10-2063] Module <Control> not found while processing module instance <Control_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:84]
+ERROR: [VRFC 10-2063] Module <DataMem> not found while processing module instance <DataMem_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:99]
+ERROR: [VRFC 10-2063] Module <InstrMem> not found while processing module instance <InstrMem_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:106]
+ERROR: [VRFC 10-2063] Module <JumpAddrGen> not found while processing module instance <JumpAddrGen_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:109]
+ERROR: [VRFC 10-2063] Module <Mux32> not found while processing module instance <Mux32_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:113]
+ERROR: [VRFC 10-2063] Module <PC> not found while processing module instance <PC_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:143]
+ERROR: [VRFC 10-2063] Module <RegFile> not found while processing module instance <RegFile_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:149]
+ERROR: [VRFC 10-2063] Module <ShiftLeft2> not found while processing module instance <ShiftLeft2_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:159]
+ERROR: [VRFC 10-2063] Module <SignExt> not found while processing module instance <SignExt_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:165]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add32_With_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstrMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JumpAddrGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2458] undeclared symbol PC_top_out, assumed default net type wire [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+ERROR: [VRFC 10-1412] syntax error near . [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/test.v:48]
+ERROR: [VRFC 10-1040] module test ignored due to previous errors [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/test.v:22]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add32_With_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstrMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JumpAddrGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2458] undeclared symbol PC_top_out, assumed default net type wire [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 5391914f04384d439ce699cdb19de331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port PC_top_out on this module [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/test.v:47]
+ERROR: [VRFC 10-2063] Module <ALUControl> not found while processing module instance <ALUControl_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:61]
+ERROR: [VRFC 10-2063] Module <ALU> not found while processing module instance <ALU_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:65]
+ERROR: [VRFC 10-2063] Module <Add32> not found while processing module instance <Add32_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:72]
+ERROR: [VRFC 10-2063] Module <Add32_With_4> not found while processing module instance <Add32_With_4_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:76]
+ERROR: [VRFC 10-2063] Module <BranchControl> not found while processing module instance <BranchConctrol_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:79]
+ERROR: [VRFC 10-2063] Module <Control> not found while processing module instance <Control_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:84]
+ERROR: [VRFC 10-2063] Module <DataMem> not found while processing module instance <DataMem_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:99]
+ERROR: [VRFC 10-2063] Module <InstrMem> not found while processing module instance <InstrMem_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:106]
+ERROR: [VRFC 10-2063] Module <JumpAddrGen> not found while processing module instance <JumpAddrGen_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:109]
+ERROR: [VRFC 10-2063] Module <Mux32> not found while processing module instance <Mux32_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:113]
+ERROR: [VRFC 10-2063] Module <PC> not found while processing module instance <PC_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:143]
+ERROR: [VRFC 10-2063] Module <RegFile> not found while processing module instance <RegFile_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:149]
+ERROR: [VRFC 10-2063] Module <ShiftLeft2> not found while processing module instance <ShiftLeft2_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:159]
+ERROR: [VRFC 10-2063] Module <SignExt> not found while processing module instance <SignExt_0> [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:165]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add32_With_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstrMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JumpAddrGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2458] undeclared symbol PC_top_out, assumed default net type wire [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 5391914f04384d439ce699cdb19de331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Add32
+Compiling module xil_defaultlib.Add32_With_4
+Compiling module xil_defaultlib.BranchControl
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.InstrMem
+Compiling module xil_defaultlib.JumpAddrGen
+Compiling module xil_defaultlib.Mux32
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ShiftLeft2
+Compiling module xil_defaultlib.SignExt
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Nov 15 02:33:14 2017. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2017.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 15 02:33:14 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 4430.031 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -view {C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg
+WARNING: Simulation object /test/PC_test_out was not found in the design.
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+EXCEPTION@[ALUControl]:no match ALUOp Input
+EXCEPTION@[ALU]:no match ALU Control Input: x
+EXCEPTION@[BranchControl]:no match Branch Type Input:xxxx
+EXCEPTION@[ALUControl]:no match Func Input: 111110
+EXCEPTION@[ALUControl]:no match Func Input: 111110
+EXCEPTION@[ALUControl]:no match Func Input: 001000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 4430.031 ; gain = 0.000
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+run 60 ms
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:01:59 ; elapsed = 00:01:35 . Memory (MB): peak = 4430.031 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 4430.031 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add32_With_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstrMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JumpAddrGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2458] undeclared symbol PC_top_out, assumed default net type wire [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 5391914f04384d439ce699cdb19de331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Add32
+Compiling module xil_defaultlib.Add32_With_4
+Compiling module xil_defaultlib.BranchControl
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.InstrMem
+Compiling module xil_defaultlib.JumpAddrGen
+Compiling module xil_defaultlib.Mux32
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ShiftLeft2
+Compiling module xil_defaultlib.SignExt
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -view {C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg
+WARNING: Simulation object /test/PC_test_out was not found in the design.
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+EXCEPTION@[ALUControl]:no match ALUOp Input
+EXCEPTION@[ALU]:no match ALU Control Input: x
+EXCEPTION@[BranchControl]:no match Branch Type Input:xxxx
+EXCEPTION@[ALUControl]:no match Func Input: 111110
+EXCEPTION@[ALUControl]:no match Func Input: 111110
+EXCEPTION@[ALUControl]:no match Func Input: 001000
+INFO@[BranchControl]:Exec BGTZ:0, 0
+INFO@[BranchControl]:Exec BGTZ:1, 0
+INFO@[BranchControl]:Exec BGTZ:0, 0
+INFO@[BranchControl]:Exec BGTZ:1, 0
+INFO@[BranchControl]:Exec BGTZ:0, 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 4430.031 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Nov 15 03:01:57 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 03:01:58 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+save_wave_config {C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 4430.031 ; gain = 0.000
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Nov 15 03:10:41 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 03:10:41 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add32_With_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstrMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JumpAddrGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2458] undeclared symbol PC_top_out, assumed default net type wire [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 5391914f04384d439ce699cdb19de331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Add32
+Compiling module xil_defaultlib.Add32_With_4
+Compiling module xil_defaultlib.BranchControl
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.InstrMem
+Compiling module xil_defaultlib.JumpAddrGen
+Compiling module xil_defaultlib.Mux32
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ShiftLeft2
+Compiling module xil_defaultlib.SignExt
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -view {C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+EXCEPTION@[ALUControl]:no match ALUOp Input
+EXCEPTION@[ALU]:no match ALU Control Input: x
+EXCEPTION@[BranchControl]:no match Branch Type Input:xxxx
+EXCEPTION@[ALUControl]:no match Func Input: 111110
+EXCEPTION@[ALUControl]:no match Func Input: 111110
+EXCEPTION@[ALUControl]:no match Func Input: 001000
+INFO@[BranchControl]:Exec BGTZ:0, 0
+INFO@[BranchControl]:Exec BGTZ:1, 0
+INFO@[BranchControl]:Exec BGTZ:0, 1
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4430.031 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 4430.031 ; gain = 0.000
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Nov 15 03:35:35 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 03:35:35 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Nov 15 03:49:56 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 03:49:57 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 1157 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc]
+Finished Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 4630.242 ; gain = 200.211
+current_design rtl_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 4682.762 ; gain = 51.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'UserInterface' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v:23]
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:12]
+INFO: [Synth 8-638] synthesizing module 'ALUControl' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALUControl' (1#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (2#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'Add32' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Add32' (3#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v:23]
+INFO: [Synth 8-638] synthesizing module 'Add32_With_4' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Add32_With_4' (4#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v:23]
+INFO: [Synth 8-638] synthesizing module 'BranchControl' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v:23]
+INFO: [Synth 8-256] done synthesizing module 'BranchControl' (5#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v:23]
+INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Control' (6#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:23]
+INFO: [Synth 8-638] synthesizing module 'DataMem' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v:23]
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "ram_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'DataMem' (7#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v:23]
+INFO: [Synth 8-638] synthesizing module 'InstrMem' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'D:/rom.txt' is read successfully [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v:31]
+INFO: [Synth 8-256] done synthesizing module 'InstrMem' (8#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v:23]
+INFO: [Synth 8-638] synthesizing module 'JumpAddrGen' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v:23]
+INFO: [Synth 8-256] done synthesizing module 'JumpAddrGen' (9#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v:23]
+INFO: [Synth 8-638] synthesizing module 'Mux32' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Mux32' (10#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v:23]
+INFO: [Synth 8-638] synthesizing module 'PC' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PC' (11#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v:23]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (12#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:23]
+INFO: [Synth 8-638] synthesizing module 'ShiftLeft2' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ShiftLeft2' (13#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v:23]
+INFO: [Synth 8-638] synthesizing module 'SignExt' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SignExt' (14#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (15#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:12]
+INFO: [Synth 8-638] synthesizing module 'clk_slow' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clk_slow' (16#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:23]
+INFO: [Synth 8-638] synthesizing module 'Input_OBtn' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Input_OBtn.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Input_OBtn' (17#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Input_OBtn.v:23]
+INFO: [Synth 8-638] synthesizing module 'Display_7Seg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:50]
+INFO: [Synth 8-226] default block is never used [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:67]
+INFO: [Synth 8-256] done synthesizing module 'Display_7Seg' (18#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'UserInterface' (19#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 4770.020 ; gain = 138.375
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 4770.020 ; gain = 138.375
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc]
+WARNING: [Vivado 12-507] No nets matched 'Clear_IBUF'. [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:01:38 ; elapsed = 00:01:35 . Memory (MB): peak = 4861.020 ; gain = 229.375
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 04:06:10 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 04:06:11 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 04:14:29 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 04:14:29 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 04:15:10 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 04:15:10 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 04:16:19 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 04:16:19 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+save_wave_config {C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add32_With_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstrMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JumpAddrGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2458] undeclared symbol PC_top_out, assumed default net type wire [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:58]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 5391914f04384d439ce699cdb19de331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Add32
+Compiling module xil_defaultlib.Add32_With_4
+Compiling module xil_defaultlib.BranchControl
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.InstrMem
+Compiling module xil_defaultlib.JumpAddrGen
+Compiling module xil_defaultlib.Mux32
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ShiftLeft2
+Compiling module xil_defaultlib.SignExt
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -view {C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+EXCEPTION@[ALUControl]:no match ALUOp Input
+EXCEPTION@[ALU]:no match ALU Control Input: x
+EXCEPTION@[BranchControl]:no match Branch Type Input:xxxx
+EXCEPTION@[ALUControl]:no match Func Input: 111110
+EXCEPTION@[ALUControl]:no match Func Input: 111110
+EXCEPTION@[ALUControl]:no match Func Input: 001000
+INFO@[BranchControl]:Exec BGTZ:0, 0
+INFO@[BranchControl]:Exec BGTZ:1, 0
+INFO@[BranchControl]:Exec BGTZ:0, 1
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4918.961 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 4918.961 ; gain = 0.000
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Wed Nov 15 04:40:03 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Wed Nov 15 04:40:46 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 04:44:00 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 04:44:00 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 04:44:30 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 04:44:30 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 04:49:42 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 04:49:43 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 04:56:55 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 04:56:56 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 05:04:42 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 05:04:42 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+save_wave_config {C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add32_With_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstrMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JumpAddrGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2458] undeclared symbol PC_top_out, assumed default net type wire [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:58]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 5391914f04384d439ce699cdb19de331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Add32
+Compiling module xil_defaultlib.Add32_With_4
+Compiling module xil_defaultlib.BranchControl
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.InstrMem
+Compiling module xil_defaultlib.JumpAddrGen
+Compiling module xil_defaultlib.Mux32
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ShiftLeft2
+Compiling module xil_defaultlib.SignExt
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -view {C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+EXCEPTION@[ALUControl]:no match ALUOp Input
+EXCEPTION@[ALU]:no match ALU Control Input: x
+EXCEPTION@[BranchControl]:no match Branch Type Input:xxxx
+EXCEPTION@[ALUControl]:no match Func Input: 111110
+EXCEPTION@[ALUControl]:no match Func Input: 111110
+EXCEPTION@[ALUControl]:no match Func Input: 001000
+INFO@[BranchControl]:Exec BGTZ:0, 0
+INFO@[BranchControl]:Exec BGTZ:1, 0
+INFO@[BranchControl]:Exec BGTZ:0, 1
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 4923.387 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 05:18:22 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 05:18:22 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183698698A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 05:30:04 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 05:30:04 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 05:31:44 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 05:31:44 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 05:32:14 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 05:32:15 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 05:40:18 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 05:40:18 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 05:43:39 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 05:43:40 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 05:45:30 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 05:45:31 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 05:46:08 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 05:46:08 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Wed Nov 15 05:47:54 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 15 05:49:17 2017] Launched synth_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/runme.log
+[Wed Nov 15 05:49:17 2017] Launched impl_1...
+Run output will be captured here: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).

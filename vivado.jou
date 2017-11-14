@@ -1,0 +1,381 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Tue Nov 14 22:41:20 2017
+# Process ID: 13068
+# Current directory: C:/Users/lixin/Desktop/MipsSingleCycleCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30064 C:\Users\lixin\Desktop\MipsSingleCycleCPU\WithoutBlockDesign102022.xpr
+# Log file: C:/Users/lixin/Desktop/MipsSingleCycleCPU/vivado.log
+# Journal file: C:/Users/lixin/Desktop/MipsSingleCycleCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/clk_2khz.v w ]
+add_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/clk_2khz.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/7SegDisplay.v w ]
+add_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/7SegDisplay.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/7SegDisplay.v] -no_script -reset -force -quiet
+remove_files  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/7SegDisplay.v
+file delete -force C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/7SegDisplay.v
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v w ]
+add_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Input_OBtn.v w ]
+add_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Input_OBtn.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v w ]
+add_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/clk_2khz.v] -no_script -reset -force -quiet
+remove_files  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/clk_2khz.v
+file delete -force C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/clk_2khz.v
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/TestIO.v w ]
+add_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/TestIO.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TestIO [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+file mkdir C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1
+file mkdir C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc w ]
+add_files -fileset constrs_1 C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc
+set_property target_constrs_file C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc [current_fileset -constrset]
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Select[3]} {Select[2]} {Select[1]} {Select[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Segment[7]} {Segment[6]} {Segment[5]} {Segment[4]} {Segment[3]} {Segment[2]} {Segment[1]} {Segment[0]}]]
+place_ports Func_Choose V16
+set_property IOSTANDARD LVCMOS33 [get_ports [list Func_Choose]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Btn_Press]]
+place_ports Btn_Press W19
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/TestIO.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/TestIO.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/simTestIO.v w ]
+add_files -fileset sim_1 C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/simTestIO.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top simTestIO [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg
+source simTestIO.tcl
+run 60 ns
+add_wave {{/simTestIO/CLK}} {{/simTestIO/Clear}} {{/simTestIO/CLK_slow}} 
+run 60 ns
+create_wave_config; add_wave /; set_property needs_save false [current_wave_config]
+relaunch_sim
+run 60 ms
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/TestIO.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/TestIO.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/TestIO.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v w ]
+add_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top UserInterface [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_sim
+launch_simulation
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg
+source simTestIO.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg
+source test.tcl
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+run 60 ms
+close_sim
+launch_simulation
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg
+source test.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+save_wave_config {C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg}
+close_sim
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+launch_simulation
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg
+source test.tcl
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+current_design rtl_1
+refresh_design
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+save_wave_config {C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg
+source test.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+save_wave_config {C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU/test_behav2.wcfg
+source test.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

@@ -12,7 +12,10 @@
 module top
    (input Clear_top,
     input CLK_top,
-    output [31:0] PC_top_out);
+    output [15:0]UI_PC_NextPC,
+    output [15:0]UI_RsAddr_RsValue,
+    output [15:0]UI_RtAddr_RtValue,
+    output [15:0]UI_ALU_DB);
 
   wire [3:0]ALUControl_0_ALUControl;
   wire [31:0]ALU_0_ALU_Output_Result;
@@ -49,7 +52,15 @@ module top
   wire [31:0]ShiftLeft2_1_Output;
   wire [31:0]SignExt_0_Output_32;
   wire [31:0]SignExt_1_Output_32;
+  wire [3:0] reg1;
+  wire [3:0] reg2;
+
   assign PC_top_out = PC_0_This_IP;
+  assign UI_PC_NextPC = {PC_0_This_IP[7:0], Mux32_3_Mul_Output[7:0]};
+  assign UI_RsAddr_RsValue = {3'b000, InstrMem_0_Instr[25:21], RegFile_0_Read_Data_1[7:0]};
+  assign UI_RtAddr_RtValue = {3'b000, InstrMem_0_Instr[20:16], RegFile_0_Read_Data_2[7:0]};
+  //assign UI_ALU_DB = Control_0_MemWrite ? {ALU_0_ALU_Output_Result[7:0], RegFile_0_Read_Data_2[7:0]} : {ALU_0_ALU_Output_Result[7:0], DataMem_0_Read_Data[7:0]};
+  assign UI_ALU_DB = {Clear_top, 2'b00, Control_0_RegWrite, Mux32_4_Mul_Output[3:0], reg1, reg2};
 
   ALUControl ALUControl_0
        (.ALUControl(ALUControl_0_ALUControl),
@@ -148,7 +159,9 @@ module top
         .Read_Reg_2(InstrMem_0_Instr[20:16]),
         .RegWrite_in(Control_0_RegWrite),
         .Write_Data(Mux32_4_Mul_Output),
-        .Write_Reg(Mux32_1_Mul_Output[4:0]));
+        .Write_Reg(Mux32_1_Mul_Output[4:0]),
+        .reg1(reg1),
+        .reg2(reg2));
   ShiftLeft2 ShiftLeft2_0
        (.SL2_Input({6'b0,InstrMem_0_Instr[25:0]}),
         .SL2_Output(ShiftLeft2_0_Output));
