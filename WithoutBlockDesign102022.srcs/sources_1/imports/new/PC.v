@@ -21,22 +21,22 @@
 
 
 module PC(
-    input [31:0] Next_IP,
+    input [31:0] Next_PC,
     input CLK,
     input Clear,
     input PCWrite,
-    output reg [31:0] This_IP
+    output reg [31:0] This_PC
     );
     always @(posedge CLK or posedge Clear)
     begin
         if(Clear)
         begin
-            This_IP <= 0;
+            This_PC <= 0;
         end
         else
         if(PCWrite == 1)
         begin
-            This_IP <= Next_IP;
+            This_PC <= Next_PC;
         end
     end
 endmodule

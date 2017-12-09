@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1'
+HD_PWD='C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

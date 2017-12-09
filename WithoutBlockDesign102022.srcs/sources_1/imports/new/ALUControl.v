@@ -38,6 +38,7 @@ module ALUControl(
                     6'b100100: ALUControl = 4'b0000;
                     6'b100101: ALUControl = 4'b0001;
                     6'b101010: ALUControl = 4'b1000;
+                    6'b001000: ALUControl = 4'b1010;
                     default:
                     begin
                         ALUControl = 4'b0000;
@@ -50,10 +51,11 @@ module ALUControl(
             4'b0011: ALUControl = 4'b1000;
             4'b0100: ALUControl = 4'b0010;
             4'b0101: ALUControl = 4'b0001;
+            4'b0110: ALUControl = 4'b1000;
             default:
             begin
                 ALUControl = 4'b0000;
-                $display("EXCEPTION@[ALUControl]:no match ALUOp Input");
+                $display("EXCEPTION@[ALUControl]:no match ALUOp Input :%d", ALUOp_in);
             end
         endcase
     end

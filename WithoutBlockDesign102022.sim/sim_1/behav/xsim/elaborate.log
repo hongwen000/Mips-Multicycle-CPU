@@ -17,6 +17,7 @@ Compiling module xil_defaultlib.DataMem
 Compiling module xil_defaultlib.InstrMem
 Compiling module xil_defaultlib.JumpAddrGen
 Compiling module xil_defaultlib.Mux32
+Compiling module xil_defaultlib.MUX1in4_32
 Compiling module xil_defaultlib.PC
 Compiling module xil_defaultlib.RegFile
 Compiling module xil_defaultlib.ShiftLeft2

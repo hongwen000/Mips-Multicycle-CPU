@@ -1,65 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1510696157">
-  <File Type="PWROPT-DCP" Name="UserInterface_pwropt.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1511480372">
   <File Type="ROUTE-PWR" Name="UserInterface_power_routed.rpt"/>
   <File Type="PA-TCL" Name="UserInterface.tcl"/>
+  <File Type="PWROPT-DCP" Name="UserInterface_pwropt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="top_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="UserInterface_reports.tcl"/>
   <File Type="BG-DRC" Name="UserInterface.drc"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="UserInterface_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="UserInterface_timing_summary_init.rpt"/>
   <File Type="OPT-HWDEF" Name="UserInterface.hwdef"/>
   <File Type="OPT-DCP" Name="UserInterface_opt.dcp"/>
   <File Type="OPT-DRC" Name="UserInterface_drc_opted.rpt"/>
-  <File Type="OPT-TIMING" Name="UserInterface_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DRC" Name="UserInterface_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="UserInterface_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="UserInterface_placed.dcp"/>
   <File Type="PLACE-IO" Name="UserInterface_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="UserInterface_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="UserInterface_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="top_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="UserInterface_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="UserInterface_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="UserInterface_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="UserInterface_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="UserInterface_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="UserInterface_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="UserInterface_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="UserInterface_drc_physopted.rpt"/>
   <File Type="BG-BIT" Name="UserInterface.bit"/>
-  <File Type="PHYSOPT-TIMING" Name="UserInterface_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="UserInterface_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="UserInterface_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="UserInterface_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="UserInterface_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="top_drc_routed.pb"/>
-  <File Type="BITSTR-MSK" Name="UserInterface.msk"/>
   <File Type="ROUTE-DRC-RPX" Name="top_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="UserInterface.bgn"/>
+  <File Type="BITSTR-MSK" Name="UserInterface.msk"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="UserInterface_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-RBT" Name="UserInterface.rbt"/>
+  <File Type="BG-BGN" Name="UserInterface.bgn"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="top_methodology_drc_routed.rpx"/>
-  <File Type="BG-BIN" Name="UserInterface.bin"/>
+  <File Type="BITSTR-RBT" Name="UserInterface.rbt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="top_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="UserInterface.bin"/>
   <File Type="ROUTE-PWR-RPX" Name="top_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="UserInterface_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="top_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="UserInterface_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="UserInterface_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="top_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="UserInterface_incremental_reuse_routed.rpt"/>
-  <File Type="RDI-RDI" Name="UserInterface.vdi"/>
   <File Type="ROUTE-CLK" Name="UserInterface_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="UserInterface.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="UserInterface_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="UserInterface_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="UserInterface_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="UserInterface_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="UserInterface_timing_summary_postroute_physopted.rpx"/>
   <File Type="BITSTR-NKY" Name="UserInterface.nky"/>
   <File Type="BITSTR-BMM" Name="UserInterface_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="UserInterface.mmi"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="UserInterface.ltx"/>
   <File Type="BITSTR-SYSDEF" Name="UserInterface.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>

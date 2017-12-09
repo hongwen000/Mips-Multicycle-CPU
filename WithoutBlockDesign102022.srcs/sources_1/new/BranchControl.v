@@ -24,8 +24,12 @@ module BranchControl(
     input [3:0] BranchControl_Input_Type,
     output reg BranchControl_Output_Exec_Branch,
     input Sign_in,
-    input Zero_in
+    input Zero_in,
+    input [31:0] Branch_Addr_in,
+    input [31:0] Jr_Addr_in,
+    output [31:0] Branch_Addr_out
     );
+    assign Branch_Addr_out = (BranchControl_Input_Type == 4'b0100) ? Jr_Addr_in : Branch_Addr_in;
     always@(BranchControl_Input_Type or Sign_in or Zero_in)
     begin
         case (BranchControl_Input_Type)
@@ -37,6 +41,7 @@ module BranchControl(
                 $display("INFO@[BranchControl]:Exec BGTZ:%b, %b", Sign_in, Zero_in);
                 BranchControl_Output_Exec_Branch = (~Sign_in && ~Zero_in);
             end
+            4'b0100: BranchControl_Output_Exec_Branch = 1'b1;
             default:
             begin
                 BranchControl_Output_Exec_Branch = 1'b0;

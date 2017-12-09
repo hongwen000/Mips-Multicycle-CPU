@@ -2,13 +2,14 @@
 # Webtalk v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Wed Nov 15 02:49:46 2017
-# Process ID: 23960
-# Current directory: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim\webtalk.jou
+# Start of session at: Sat Dec  9 22:02:30 2017
+# Process ID: 18900
+# Current directory: C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Nov 15 02:49:50 2017. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2017.3/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Wed Nov 15 02:49:50 2017...
+source C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat Dec  9 22:02:36 2017. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2017.3/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 67.625 ; gain = 1.563
+INFO: [Common 17-206] Exiting Webtalk at Sat Dec  9 22:02:36 2017...

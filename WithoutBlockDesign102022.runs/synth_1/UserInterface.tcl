@@ -16,42 +16,37 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
-set_param synth.incrementalSynthesisCache C:/Users/lixin/Desktop/MipsSingleCycleCPU/.Xil/Vivado-13068-DESKTOP-5Q0ADMK/incrSyn
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.cache/wt [current_project]
-set_property parent.project_path C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.cache/wt [current_project]
+set_property parent.project_path C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.cache/ip [current_project]
+set_property ip_output_repo c:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Input_OBtn.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v
-  C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/Input_OBtn.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/top.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -61,8 +56,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc
-set_property used_in_implementation false [get_files C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc]
+read_xdc C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc
+set_property used_in_implementation false [get_files C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc]
 
 
 synth_design -top UserInterface -part xc7a35tcpg236-1

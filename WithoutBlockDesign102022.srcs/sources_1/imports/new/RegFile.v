@@ -29,17 +29,17 @@ module RegFile(
     input [31:0] Write_Data,
     input RegWrite_in,
     output [31:0] Read_Data_1,
-    output [31:0] Read_Data_2,
-    output [3:0] reg1,
-    output [3:0] reg2
+    output [31:0] Read_Data_2//,
+    //output [3:0] reg1,
+    //output [3:0] reg2
     );
     reg[31:0] impl_reg[1:31];
     integer i;
     assign Read_Data_1 = (Read_Reg_1 == 0) ? 0 : impl_reg[Read_Reg_1];
     assign Read_Data_2 = (Read_Reg_2 == 0) ? 0 : impl_reg[Read_Reg_2];
-    assign reg1 = impl_reg[1][3:0];
-    assign reg2 = Write_Reg[3:0];
-    always @(negedge CLK or negedge Clear or posedge Clear)
+    //assign reg1 = impl_reg[1][3:0];
+    //assign reg2 = Write_Reg[3:0];
+    always @(negedge CLK or negedge Clear)
     begin
         if(Clear) 
         begin

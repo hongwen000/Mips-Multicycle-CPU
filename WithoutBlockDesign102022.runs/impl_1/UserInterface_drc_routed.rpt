@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date         : Wed Nov 15 05:54:56 2017
+| Date         : Fri Nov 24 07:44:40 2017
 | Host         : DESKTOP-5Q0ADMK running 64-bit major release  (build 9200)
 | Command      : report_drc -file UserInterface_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
 | Design       : UserInterface
@@ -3090,7 +3090,7 @@ Related violations: <none>
 
 PDRC-153#609 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[28][0]_P_1 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[28][0]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[28][0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[28][0]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[28][0]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[28][0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#610 Warning
@@ -3735,52 +3735,52 @@ Related violations: <none>
 
 PDRC-153#738 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][10]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][10]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][10]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][10]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][10]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][10]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#739 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][11]_P_1 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][11]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][11]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][11]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][11]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][11]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#740 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][12]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][12]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][12]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][12]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][12]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][12]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#741 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][13]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][13]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][13]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][13]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][13]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][13]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#742 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][14]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][14]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][14]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][14]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][14]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][14]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#743 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][15]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][15]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][15]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][15]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][15]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][15]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#744 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][16]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][16]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][16]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][16]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][16]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][16]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#745 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][17]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][17]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][17]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][17]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][17]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][17]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#746 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][18]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][18]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][18]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][18]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][18]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][18]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#747 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][19]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][19]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][19]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][19]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][19]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][19]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#748 Warning
@@ -3790,72 +3790,72 @@ Related violations: <none>
 
 PDRC-153#749 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][20]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][20]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][20]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][20]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][20]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][20]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#750 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][21]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][21]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][21]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][21]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][21]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][21]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#751 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][22]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][22]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][22]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][22]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][22]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][22]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#752 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][23]_P_1 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][23]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][23]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][23]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][23]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][23]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#753 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][24]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][24]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][24]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][24]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][24]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][24]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#754 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][25]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][25]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][25]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][25]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][25]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][25]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#755 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][26]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][26]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][26]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][26]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][26]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][26]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#756 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][27]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][27]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][27]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][27]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][27]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][27]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#757 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][28]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][28]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][28]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][28]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][28]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][28]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#758 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][29]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][29]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][29]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][29]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][29]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][29]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#759 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][2]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][2]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][2]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][2]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#760 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][30]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][30]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][30]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][30]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][30]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][30]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#761 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][31]_P_5 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][31]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][31]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][31]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][31]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][31]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#762 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][3]_P_1 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][3]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][3]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][3]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#763 Warning
@@ -3875,17 +3875,17 @@ Related violations: <none>
 
 PDRC-153#766 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][7]_P_3 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][7]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][7]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][7]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#767 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][8]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][8]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][8]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][8]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#768 Warning
 Gated clock check  
-Net top_0/PC_0/impl_reg_reg[31][9]_P_0 is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][9]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net top_0/PC_0/impl_reg_reg[31][9]_P is a gated clock net sourced by a combinational pin top_0/PC_0/impl_reg_reg[31][9]_LDC_i_1/O, cell top_0/PC_0/impl_reg_reg[31][9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#769 Warning

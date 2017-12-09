@@ -1,33 +1,35 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ALUControl
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Add32
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Add32_With_4
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module BranchControl
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Control
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module DataMem
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module InstrMem
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module JumpAddrGen
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/MUX1in4_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX1in4_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Mux32
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RegFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ShiftLeft2
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module SignExt
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top
-INFO: [VRFC 10-2458] undeclared symbol PC_top_out, assumed default net type wire [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:58]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-2458] undeclared symbol PC_top_out, assumed default net type wire [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/top.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sim_1/new/test.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module test

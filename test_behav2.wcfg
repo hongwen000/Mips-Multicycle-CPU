@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="2183334fs"></ZoomStartTime>
-      <ZoomEndTime time="160683335fs"></ZoomEndTime>
-      <Cursor1Time time="58383000fs"></Cursor1Time>
+      <ZoomStartTime time="201360000fs"></ZoomStartTime>
+      <ZoomEndTime time="215440001fs"></ZoomEndTime>
+      <Cursor1Time time="210000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="162"></NameColumnWidth>
-      <ValueColumnWidth column_width="129"></ValueColumnWidth>
+      <ValueColumnWidth column_width="109"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="54" />
+   <WVObjectSize size="76" />
    <wave_markers>
       <marker time="143800000" label="" />
       <marker time="164600000" label="" />
@@ -53,7 +53,7 @@
    <wvobject fp_name="/test/top_0/InstrMem_0_Instr" type="array">
       <obj_property name="ElementShortName">InstrMem_0_Instr[31:0]</obj_property>
       <obj_property name="ObjectShortName">InstrMem_0_Instr[31:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="CustomSignalColor">#FFFF00</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
@@ -95,6 +95,34 @@
       <obj_property name="ElementShortName">Add32_With_4_0_Add_With_4_Output[31:0]</obj_property>
       <obj_property name="ObjectShortName">Add32_With_4_0_Add_With_4_Output[31:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/test/top_0/BranchConctrol_0/BranchControl_Input_Type" type="array">
+      <obj_property name="ElementShortName">BranchControl_Input_Type[3:0]</obj_property>
+      <obj_property name="ObjectShortName">BranchControl_Input_Type[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/BranchConctrol_0/BranchControl_Output_Exec_Branch" type="logic">
+      <obj_property name="ElementShortName">BranchControl_Output_Exec_Branch</obj_property>
+      <obj_property name="ObjectShortName">BranchControl_Output_Exec_Branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/BranchConctrol_0/Sign_in" type="logic">
+      <obj_property name="ElementShortName">Sign_in</obj_property>
+      <obj_property name="ObjectShortName">Sign_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/BranchConctrol_0/Zero_in" type="logic">
+      <obj_property name="ElementShortName">Zero_in</obj_property>
+      <obj_property name="ObjectShortName">Zero_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/BranchConctrol_0/Branch_Addr_in" type="array">
+      <obj_property name="ElementShortName">Branch_Addr_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Branch_Addr_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/BranchConctrol_0/Jr_Addr_in" type="array">
+      <obj_property name="ElementShortName">Jr_Addr_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Jr_Addr_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/BranchConctrol_0/Branch_Addr_out" type="array">
+      <obj_property name="ElementShortName">Branch_Addr_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Branch_Addr_out[31:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/test/top_0/RegFile_0/Write_Reg" type="array">
       <obj_property name="ElementShortName">Write_Reg[4:0]</obj_property>
       <obj_property name="ObjectShortName">Write_Reg[4:0]</obj_property>
@@ -120,7 +148,6 @@
    <wvobject fp_name="/test/top_0/RegFile_0/impl_reg" type="array">
       <obj_property name="ElementShortName">impl_reg[1:31][31:0]</obj_property>
       <obj_property name="ObjectShortName">impl_reg[1:31][31:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject fp_name="/test/top_0/Control_0_ALUOp" type="array">
       <obj_property name="ElementShortName">Control_0_ALUOp[3:0]</obj_property>
@@ -134,9 +161,9 @@
       <obj_property name="ElementShortName">Control_0_Branch[3:0]</obj_property>
       <obj_property name="ObjectShortName">Control_0_Branch[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/test/top_0/Control_0_RegDst" type="logic">
-      <obj_property name="ElementShortName">Control_0_RegDst</obj_property>
-      <obj_property name="ObjectShortName">Control_0_RegDst</obj_property>
+   <wvobject fp_name="/test/top_0/Control_0_RegDst" type="array">
+      <obj_property name="ElementShortName">Control_0_RegDst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Control_0_RegDst[1:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/test/top_0/Control_0_RegWrite" type="logic">
       <obj_property name="ElementShortName">Control_0_RegWrite</obj_property>
@@ -177,6 +204,42 @@
    <wvobject fp_name="/test/top_0/RegFile_0_Read_Data_2" type="array">
       <obj_property name="ElementShortName">RegFile_0_Read_Data_2[31:0]</obj_property>
       <obj_property name="ObjectShortName">RegFile_0_Read_Data_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/RegFile_0/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/RegFile_0/Clear" type="logic">
+      <obj_property name="ElementShortName">Clear</obj_property>
+      <obj_property name="ObjectShortName">Clear</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/RegFile_0/Read_Reg_1" type="array">
+      <obj_property name="ElementShortName">Read_Reg_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Read_Reg_1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/RegFile_0/Read_Reg_2" type="array">
+      <obj_property name="ElementShortName">Read_Reg_2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Read_Reg_2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/RegFile_0/Write_Reg" type="array">
+      <obj_property name="ElementShortName">Write_Reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Write_Reg[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/RegFile_0/Write_Data" type="array">
+      <obj_property name="ElementShortName">Write_Data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Write_Data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/RegFile_0/RegWrite_in" type="logic">
+      <obj_property name="ElementShortName">RegWrite_in</obj_property>
+      <obj_property name="ObjectShortName">RegWrite_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/RegFile_0/Read_Data_1" type="array">
+      <obj_property name="ElementShortName">Read_Data_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Read_Data_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/RegFile_0/Read_Data_2" type="array">
+      <obj_property name="ElementShortName">Read_Data_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Read_Data_2[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/test/top_0/ALU_0/ALU_Control_in" type="array">
       <obj_property name="ElementShortName">ALU_Control_in[3:0]</obj_property>
@@ -234,40 +297,65 @@
       <obj_property name="ElementShortName">Output_32[31:0]</obj_property>
       <obj_property name="ObjectShortName">Output_32[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/test/top_0/Mux32_1/Mux_Input_1" type="array">
-      <obj_property name="ElementShortName">Mux_Input_1[31:0]</obj_property>
-      <obj_property name="ObjectShortName">Mux_Input_1[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test/top_0/Mux32_1/Mux_Input_2" type="array">
-      <obj_property name="ElementShortName">Mux_Input_2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">Mux_Input_2[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test/top_0/Mux32_1/Mul_Sel" type="logic">
-      <obj_property name="ElementShortName">Mul_Sel</obj_property>
-      <obj_property name="ObjectShortName">Mul_Sel</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test/top_0/Mux32_1/Mul_Output" type="array">
-      <obj_property name="ElementShortName">Mul_Output[31:0]</obj_property>
-      <obj_property name="ObjectShortName">Mul_Output[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test/top_0/Control_0_Jump" type="logic">
-      <obj_property name="ElementShortName">Control_0_Jump</obj_property>
-      <obj_property name="ObjectShortName">Control_0_Jump</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test/top_0/Control_0_MemRead" type="logic">
-      <obj_property name="ElementShortName">Control_0_MemRead</obj_property>
-      <obj_property name="ObjectShortName">Control_0_MemRead</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test/top_0/Control_0_MemWrite" type="logic">
-      <obj_property name="ElementShortName">Control_0_MemWrite</obj_property>
-      <obj_property name="ObjectShortName">Control_0_MemWrite</obj_property>
-   </wvobject>
-   <wvobject fp_name="/test/top_0/Control_0_MemtoReg" type="logic">
-      <obj_property name="ElementShortName">Control_0_MemtoReg</obj_property>
-      <obj_property name="ObjectShortName">Control_0_MemtoReg</obj_property>
-   </wvobject>
    <wvobject fp_name="/test/top_0/DataMem_0/ram" type="array">
       <obj_property name="ElementShortName">ram[127:0][7:0]</obj_property>
       <obj_property name="ObjectShortName">ram[127:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0/Instr" type="array">
+      <obj_property name="ElementShortName">Instr[31:26]</obj_property>
+      <obj_property name="ObjectShortName">Instr[31:26]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0/Funct" type="array">
+      <obj_property name="ElementShortName">Funct[5:0]</obj_property>
+      <obj_property name="ObjectShortName">Funct[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0/RegDst" type="array">
+      <obj_property name="ElementShortName">RegDst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">RegDst[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0/Jump" type="logic">
+      <obj_property name="ElementShortName">Jump</obj_property>
+      <obj_property name="ObjectShortName">Jump</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0/Branch" type="array">
+      <obj_property name="ElementShortName">Branch[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Branch[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0/MemRead" type="logic">
+      <obj_property name="ElementShortName">MemRead</obj_property>
+      <obj_property name="ObjectShortName">MemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0/MemtoReg" type="logic">
+      <obj_property name="ElementShortName">MemtoReg</obj_property>
+      <obj_property name="ObjectShortName">MemtoReg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0/ALUOp" type="array">
+      <obj_property name="ElementShortName">ALUOp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOp[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0/ALUSrc" type="logic">
+      <obj_property name="ElementShortName">ALUSrc</obj_property>
+      <obj_property name="ObjectShortName">ALUSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0/RegWrite" type="logic">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0/PCWrite" type="logic">
+      <obj_property name="ElementShortName">PCWrite</obj_property>
+      <obj_property name="ObjectShortName">PCWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0/ZeroExt" type="logic">
+      <obj_property name="ElementShortName">ZeroExt</obj_property>
+      <obj_property name="ObjectShortName">ZeroExt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top_0/Control_0/ReadShamt" type="logic">
+      <obj_property name="ElementShortName">ReadShamt</obj_property>
+      <obj_property name="ObjectShortName">ReadShamt</obj_property>
    </wvobject>
 </wave_config>

@@ -14,90 +14,90 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 34500 
+INFO: Helper process launched with PID 864 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 333.438 ; gain = 102.008
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 332.242 ; gain = 100.973
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'UserInterface' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v:23]
-INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:12]
-INFO: [Synth 8-638] synthesizing module 'ALUControl' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v:23]
-INFO: [Synth 8-256] done synthesizing module 'ALUControl' (1#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v:23]
-INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v:23]
-INFO: [Synth 8-256] done synthesizing module 'ALU' (2#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v:23]
-INFO: [Synth 8-638] synthesizing module 'Add32' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Add32' (3#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v:23]
-INFO: [Synth 8-638] synthesizing module 'Add32_With_4' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Add32_With_4' (4#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v:23]
-INFO: [Synth 8-638] synthesizing module 'BranchControl' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v:23]
-INFO: [Synth 8-256] done synthesizing module 'BranchControl' (5#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v:23]
-INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Control' (6#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:23]
-INFO: [Synth 8-638] synthesizing module 'DataMem' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v:23]
+INFO: [Synth 8-638] synthesizing module 'UserInterface' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v:23]
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/top.v:12]
+INFO: [Synth 8-638] synthesizing module 'ALUControl' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALUControl' (1#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALUControl.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (2#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'Add32' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Add32' (3#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32.v:23]
+INFO: [Synth 8-638] synthesizing module 'Add32_With_4' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Add32_With_4' (4#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v:23]
+INFO: [Synth 8-638] synthesizing module 'BranchControl' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v:23]
+INFO: [Synth 8-256] done synthesizing module 'BranchControl' (5#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v:23]
+INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Control' (6#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:23]
+INFO: [Synth 8-638] synthesizing module 'DataMem' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v:23]
 WARNING: [Synth 8-4767] Trying to implement RAM 'ram_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 Reason is one or more of the following :
 	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
 	2: Unable to determine number of words or word size in RAM. 
 	3: No valid read/write found for RAM. 
 RAM "ram_reg" dissolved into registers
-INFO: [Synth 8-256] done synthesizing module 'DataMem' (7#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v:23]
-INFO: [Synth 8-638] synthesizing module 'InstrMem' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v:23]
-INFO: [Synth 8-3876] $readmem data file 'D:/rom.txt' is read successfully [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v:31]
-INFO: [Synth 8-256] done synthesizing module 'InstrMem' (8#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v:23]
-INFO: [Synth 8-638] synthesizing module 'JumpAddrGen' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v:23]
-INFO: [Synth 8-256] done synthesizing module 'JumpAddrGen' (9#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v:23]
-INFO: [Synth 8-638] synthesizing module 'Mux32' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Mux32' (10#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v:23]
-INFO: [Synth 8-638] synthesizing module 'PC' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v:23]
-INFO: [Synth 8-256] done synthesizing module 'PC' (11#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v:23]
-INFO: [Synth 8-638] synthesizing module 'RegFile' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:23]
-WARNING: [Synth 8-5788] Register impl_reg_reg[1] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[2] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[3] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[4] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[5] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[6] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[7] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[8] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[9] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[10] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[11] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[12] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[13] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[14] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[15] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[16] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[17] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[18] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[19] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[20] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[21] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[22] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[23] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[24] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[25] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[26] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[27] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[28] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[29] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[30] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-WARNING: [Synth 8-5788] Register impl_reg_reg[31] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
-INFO: [Synth 8-256] done synthesizing module 'RegFile' (12#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:23]
-INFO: [Synth 8-638] synthesizing module 'ShiftLeft2' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v:23]
-INFO: [Synth 8-256] done synthesizing module 'ShiftLeft2' (13#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v:23]
-INFO: [Synth 8-638] synthesizing module 'SignExt' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v:23]
-INFO: [Synth 8-256] done synthesizing module 'SignExt' (14#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v:23]
-INFO: [Synth 8-256] done synthesizing module 'top' (15#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/top.v:12]
-INFO: [Synth 8-638] synthesizing module 'clk_slow' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:23]
-INFO: [Synth 8-256] done synthesizing module 'clk_slow' (16#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:23]
-INFO: [Synth 8-638] synthesizing module 'Input_OBtn' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Input_OBtn.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Input_OBtn' (17#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Input_OBtn.v:23]
-INFO: [Synth 8-638] synthesizing module 'Display_7Seg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:23]
-INFO: [Synth 8-226] default block is never used [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:45]
-INFO: [Synth 8-226] default block is never used [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:62]
-INFO: [Synth 8-256] done synthesizing module 'Display_7Seg' (18#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:23]
-INFO: [Synth 8-256] done synthesizing module 'UserInterface' (19#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DataMem' (7#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v:23]
+INFO: [Synth 8-638] synthesizing module 'InstrMem' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'D:/rom.txt' is read successfully [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v:31]
+INFO: [Synth 8-256] done synthesizing module 'InstrMem' (8#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v:23]
+INFO: [Synth 8-638] synthesizing module 'JumpAddrGen' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v:23]
+INFO: [Synth 8-256] done synthesizing module 'JumpAddrGen' (9#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v:23]
+INFO: [Synth 8-638] synthesizing module 'Mux32' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Mux32' (10#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v:23]
+INFO: [Synth 8-638] synthesizing module 'PC' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PC' (11#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v:23]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:23]
+WARNING: [Synth 8-5788] Register impl_reg_reg[1] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[2] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[3] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[4] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[5] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[6] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[7] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[8] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[9] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[10] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[11] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[12] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[13] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[14] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[15] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[16] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[17] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[18] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[19] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[20] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[21] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[22] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[23] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[24] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[25] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[26] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[27] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[28] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[29] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[30] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+WARNING: [Synth 8-5788] Register impl_reg_reg[31] in module RegFile is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:38]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (12#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v:23]
+INFO: [Synth 8-638] synthesizing module 'ShiftLeft2' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ShiftLeft2' (13#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/ShiftLeft2.v:23]
+INFO: [Synth 8-638] synthesizing module 'SignExt' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SignExt' (14#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/SignExt.v:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (15#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/top.v:12]
+INFO: [Synth 8-638] synthesizing module 'clk_slow' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clk_slow' (16#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:23]
+INFO: [Synth 8-638] synthesizing module 'Input_OBtn' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/Input_OBtn.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Input_OBtn' (17#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/Input_OBtn.v:23]
+INFO: [Synth 8-638] synthesizing module 'Display_7Seg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:45]
+INFO: [Synth 8-226] default block is never used [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:62]
+INFO: [Synth 8-256] done synthesizing module 'Display_7Seg' (18#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'UserInterface' (19#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 407.527 ; gain = 176.098
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 406.965 ; gain = 175.695
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -107,41 +107,41 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 407.527 ; gain = 176.098
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 406.965 ; gain = 175.695
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc]
-WARNING: [Vivado 12-507] No nets matched 'ClearUI_IBUF'. [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc:49]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc:49]
+Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc]
+WARNING: [Vivado 12-507] No nets matched 'ClearUI_IBUF'. [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc:49]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/UserInterface_propImpl.xdc].
+Finished Parsing XDC File [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/constrs_1/new/CST_test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/UserInterface_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/UserInterface_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 754.215 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 754.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 754.215 ; gain = 522.785
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 754.008 ; gain = 522.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 754.215 ; gain = 522.785
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 754.008 ; gain = 522.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 754.215 ; gain = 522.785
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 754.008 ; gain = 522.738
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "ALUControl" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
@@ -185,10 +185,10 @@ INFO: [Synth 8-5546] ROM "impl_reg_reg[28]" won't be mapped to RAM because it is
 INFO: [Synth 8-5546] ROM "impl_reg_reg[29]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "impl_reg_reg[30]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "impl_reg_reg[31]" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Segment_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:58]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'Segment_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:58]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 754.215 ; gain = 522.785
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 754.008 ; gain = 522.738
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -217,6 +217,7 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 101   
+	   2 Input     16 Bit        Muxes := 1     
 	   4 Input     16 Bit        Muxes := 1     
 	   4 Input      8 Bit        Muxes := 72    
 	   2 Input      8 Bit        Muxes := 124   
@@ -307,6 +308,10 @@ Module SignExt
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
+Module top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
 Module clk_slow 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -350,7 +355,7 @@ INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too spar
 INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element clk_slow_0/count_reg was removed.  [C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:33]
+WARNING: [Synth 8-6014] Unused sequential element clk_slow_0/count_reg was removed.  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:33]
 WARNING: [Synth 8-3331] design DataMem has unconnected port Addr[31]
 WARNING: [Synth 8-3331] design DataMem has unconnected port Addr[30]
 WARNING: [Synth 8-3331] design DataMem has unconnected port Addr[29]
@@ -377,61 +382,61 @@ WARNING: [Synth 8-3331] design DataMem has unconnected port Addr[9]
 WARNING: [Synth 8-3331] design DataMem has unconnected port Addr[8]
 WARNING: [Synth 8-3331] design DataMem has unconnected port Addr[7]
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Display_7Seg_0/Segment_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\top_0/PC_0/This_IP_reg_rep[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\top_0/PC_0/This_PC_reg_rep[0] )
 WARNING: [Synth 8-3332] Sequential element (Display_7Seg_0/Segment_reg[7]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[31]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[30]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[29]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[28]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[27]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[26]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[25]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[24]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[23]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[22]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[21]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[20]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[19]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[18]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[17]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[16]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[15]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[14]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[13]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[12]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[11]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[10]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[9]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[8]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[7]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg_rep[0]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[31]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[30]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[29]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[28]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[27]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[26]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[25]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[24]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[23]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[22]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[21]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[20]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[19]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[18]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[17]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[16]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[15]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[14]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[13]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[12]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[11]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[10]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[9]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[8]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_IP_reg[0]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[31]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[30]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[29]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[28]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[27]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[26]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[25]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[24]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[23]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[22]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[21]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[20]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[19]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[18]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[17]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[16]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[15]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[14]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[13]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[12]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[11]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[10]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[9]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[8]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[7]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[0]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[31]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[30]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[29]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[28]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[27]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[26]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[25]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[24]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[23]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[22]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[21]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[20]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[19]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[18]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[17]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[16]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[15]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[14]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[13]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[12]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[11]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[10]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[9]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[8]) is unused and will be removed from module UserInterface.
+WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg[0]) is unused and will be removed from module UserInterface.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:50 ; elapsed = 00:01:52 . Memory (MB): peak = 754.215 ; gain = 522.785
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:01:43 . Memory (MB): peak = 754.008 ; gain = 522.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -464,13 +469,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:01 ; elapsed = 00:02:03 . Memory (MB): peak = 801.926 ; gain = 570.496
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:52 ; elapsed = 00:01:54 . Memory (MB): peak = 802.941 ; gain = 571.672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:45 ; elapsed = 00:02:47 . Memory (MB): peak = 830.035 ; gain = 598.605
+Finished Timing Optimization : Time (s): cpu = 00:02:29 ; elapsed = 00:02:31 . Memory (MB): peak = 830.898 ; gain = 599.629
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -482,7 +487,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:26 ; elapsed = 00:03:28 . Memory (MB): peak = 949.043 ; gain = 717.613
+Finished Technology Mapping : Time (s): cpu = 00:03:06 ; elapsed = 00:03:07 . Memory (MB): peak = 956.781 ; gain = 725.512
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -506,7 +511,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:29 ; elapsed = 00:03:31 . Memory (MB): peak = 949.043 ; gain = 717.613
+Finished IO Insertion : Time (s): cpu = 00:03:08 ; elapsed = 00:03:10 . Memory (MB): peak = 956.781 ; gain = 725.512
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -519,7 +524,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:29 ; elapsed = 00:03:31 . Memory (MB): peak = 949.043 ; gain = 717.613
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:08 ; elapsed = 00:03:10 . Memory (MB): peak = 956.781 ; gain = 725.512
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -531,25 +536,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:30 ; elapsed = 00:03:32 . Memory (MB): peak = 949.043 ; gain = 717.613
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:10 ; elapsed = 00:03:11 . Memory (MB): peak = 956.781 ; gain = 725.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:31 ; elapsed = 00:03:33 . Memory (MB): peak = 949.043 ; gain = 717.613
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:10 ; elapsed = 00:03:12 . Memory (MB): peak = 956.781 ; gain = 725.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:32 ; elapsed = 00:03:34 . Memory (MB): peak = 949.043 ; gain = 717.613
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:11 ; elapsed = 00:03:12 . Memory (MB): peak = 956.781 ; gain = 725.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:32 ; elapsed = 00:03:34 . Memory (MB): peak = 949.043 ; gain = 717.613
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:11 ; elapsed = 00:03:12 . Memory (MB): peak = 956.781 ; gain = 725.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -567,14 +572,14 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     4|
 |2     |CARRY4 |    35|
-|3     |LUT1   |    20|
-|4     |LUT2   |   119|
-|5     |LUT3   |  2155|
-|6     |LUT4   |    93|
-|7     |LUT5   |   663|
-|8     |LUT6   |  4192|
-|9     |MUXF7  |   392|
-|10    |MUXF8  |    69|
+|3     |LUT1   |    12|
+|4     |LUT2   |   135|
+|5     |LUT3   |  2130|
+|6     |LUT4   |   120|
+|7     |LUT5   |   398|
+|8     |LUT6   |  4257|
+|9     |MUXF7  |   820|
+|10    |MUXF8  |   296|
 |11    |FDCE   |  1005|
 |12    |FDPE   |   992|
 |13    |FDRE   |  1105|
@@ -588,28 +593,28 @@ Report Instance Areas:
 +------+-------------------+-------------+------+
 |      |Instance           |Module       |Cells |
 +------+-------------------+-------------+------+
-|1     |top                |             | 11861|
+|1     |top                |             | 12326|
 |2     |  Display_7Seg_0   |Display_7Seg |    35|
 |3     |  Input_OBtn_0     |Input_OBtn   |     6|
-|4     |  Input_OBtn_1     |Input_OBtn_0 |    39|
+|4     |  Input_OBtn_1     |Input_OBtn_0 |    38|
 |5     |  clk_slow_0       |clk_slow     |    50|
-|6     |  top_0            |top          | 11693|
+|6     |  top_0            |top          | 12159|
 |7     |    ALU_0          |ALU          |    15|
 |8     |    Add32_0        |Add32        |     3|
 |9     |    Add32_With_4_0 |Add32_With_4 |     2|
-|10    |    DataMem_0      |DataMem      |  2496|
-|11    |    PC_0           |PC           |  3111|
-|12    |    RegFile_0      |RegFile      |  4082|
+|10    |    DataMem_0      |DataMem      |  2944|
+|11    |    PC_0           |PC           |  3125|
+|12    |    RegFile_0      |RegFile      |  4086|
 +------+-------------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:32 ; elapsed = 00:03:34 . Memory (MB): peak = 949.043 ; gain = 717.613
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:11 ; elapsed = 00:03:12 . Memory (MB): peak = 956.781 ; gain = 725.512
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 80 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:03:17 ; elapsed = 00:03:26 . Memory (MB): peak = 949.043 ; gain = 370.926
-Synthesis Optimization Complete : Time (s): cpu = 00:03:32 ; elapsed = 00:03:34 . Memory (MB): peak = 949.043 ; gain = 717.613
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:56 ; elapsed = 00:03:05 . Memory (MB): peak = 956.781 ; gain = 378.469
+Synthesis Optimization Complete : Time (s): cpu = 00:03:11 ; elapsed = 00:03:12 . Memory (MB): peak = 956.781 ; gain = 725.512
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1501 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-17] Analyzing 2156 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 7 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -620,8 +625,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 103 Infos, 113 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:37 ; elapsed = 00:03:39 . Memory (MB): peak = 949.043 ; gain = 722.316
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lixin/Desktop/MipsSingleCycleCPU/WithoutBlockDesign102022.runs/synth_1/UserInterface.dcp' has been generated.
+synth_design: Time (s): cpu = 00:03:15 ; elapsed = 00:03:17 . Memory (MB): peak = 956.781 ; gain = 730.105
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.runs/synth_1/UserInterface.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file UserInterface_utilization_synth.rpt -pb top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 949.043 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 15 05:53:04 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 956.781 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 24 07:42:57 2017...

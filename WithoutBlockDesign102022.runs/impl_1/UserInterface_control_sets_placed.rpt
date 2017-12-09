@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date         : Wed Nov 15 05:54:07 2017
+| Date         : Fri Nov 24 07:43:55 2017
 | Host         : DESKTOP-5Q0ADMK running 64-bit major release  (build 9200)
 | Command      : report_control_sets -file UserInterface_control_sets_placed.rpt
 | Design       : UserInterface
@@ -31,11 +31,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              49 |           14 |
+| No           | No                    | No                     |              49 |           22 |
 | No           | No                    | Yes                    |             992 |          992 |
-| No           | Yes                   | No                     |            1031 |         1003 |
-| Yes          | No                    | No                     |            1024 |          647 |
-| Yes          | No                    | Yes                    |            1005 |          997 |
+| No           | Yes                   | No                     |            1031 |         1002 |
+| Yes          | No                    | No                     |            1024 |          659 |
+| Yes          | No                    | Yes                    |            1005 |          999 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 

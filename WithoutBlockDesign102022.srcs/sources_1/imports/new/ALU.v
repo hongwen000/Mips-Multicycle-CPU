@@ -29,7 +29,7 @@ module ALU(
     output ALU_Output_Sign
     );
     assign ALU_Output_Zero = ALU_Input_1 == ALU_Input_2 ? 1 : 0;
-    assign ALU_Output_Sign = ALU_Input_1[31] ? 1 : 0;
+    assign ALU_Output_Sign = ALU_Input_1[31];
     always @(ALU_Control_in or ALU_Input_1 or ALU_Input_2)
     begin
         case(ALU_Control_in)
@@ -48,6 +48,7 @@ module ALU(
                     ALU_Output_Result = 0;
             end
             4'b1001: ALU_Output_Result = ALU_Input_2 << ALU_Input_1;
+            4'b1010: ALU_Output_Result = ALU_Input_1;
             4'b1100: ALU_Output_Result = ALU_Input_1 ^ ALU_Input_2;
             default:
             begin

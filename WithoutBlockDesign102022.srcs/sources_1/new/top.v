@@ -24,6 +24,7 @@ module top
   wire [31:0]Add32_0_Add_Output;
   wire [31:0]Add32_With_4_0_Add_With_4_Output;
   wire BranchConctrol_0_Output_Exec_Branch;
+  wire [31:0]BranchConctrol_0_Branch_Addr_out;
   wire [3:0]Control_0_ALUOp;
   wire Control_0_ALUSrc;
   wire [3:0]Control_0_Branch;
@@ -31,20 +32,22 @@ module top
   wire Control_0_MemRead;
   wire Control_0_MemWrite;
   wire Control_0_MemtoReg;
-  wire Control_0_RegDst;
+  wire [1:0] Control_0_RegDst;
   wire Control_0_RegWrite;
   wire Control_0_PCWrite;
   wire Control_0_ZeroExt;
   wire Control_0_ReadShamt;
+  wire Control_0_SaveRa;
   wire [31:0]DataMem_0_Read_Data;
   wire [31:0]InstrMem_0_Instr;
   wire [31:0]JumpAddrGen_0_JumpAddr;
   wire [31:0]Mux32_0_Mul_Output;
-  wire [31:0]Mux32_1_Mul_Output;
+  wire [31:0]MUX1in4_32_0_Mul_Output;
   wire [31:0]Mux32_2_Mul_Output;
   wire [31:0]Mux32_3_Mul_Output;
   wire [31:0]Mux32_4_Mul_Output;
   wire [31:0]Mux32_5_Mul_Output;
+  wire [31:0]Mux32_6_Mul_Output;
   wire [31:0]PC_0_This_IP;
   wire [31:0]RegFile_0_Read_Data_1;
   wire [31:0]RegFile_0_Read_Data_2;
@@ -52,15 +55,15 @@ module top
   wire [31:0]ShiftLeft2_1_Output;
   wire [31:0]SignExt_0_Output_32;
   wire [31:0]SignExt_1_Output_32;
-  wire [3:0] reg1;
-  wire [3:0] reg2;
+  //wire [3:0] reg1;
+  //wire [3:0] reg2;
 
   assign PC_top_out = PC_0_This_IP;
   assign UI_PC_NextPC = {PC_0_This_IP[7:0], Mux32_3_Mul_Output[7:0]};
   assign UI_RsAddr_RsValue = {3'b000, InstrMem_0_Instr[25:21], RegFile_0_Read_Data_1[7:0]};
   assign UI_RtAddr_RtValue = {3'b000, InstrMem_0_Instr[20:16], RegFile_0_Read_Data_2[7:0]};
-  //assign UI_ALU_DB = Control_0_MemWrite ? {ALU_0_ALU_Output_Result[7:0], RegFile_0_Read_Data_2[7:0]} : {ALU_0_ALU_Output_Result[7:0], DataMem_0_Read_Data[7:0]};
-  assign UI_ALU_DB = {Clear_top, 2'b00, Control_0_RegWrite, Mux32_4_Mul_Output[3:0], reg1, reg2};
+  assign UI_ALU_DB = Control_0_MemWrite ? {ALU_0_ALU_Output_Result[7:0], RegFile_0_Read_Data_2[7:0]} : {ALU_0_ALU_Output_Result[7:0], DataMem_0_Read_Data[7:0]};
+  //assign UI_ALU_DB = {Clear_top, 2'00, Control_0_RegWrite, Mux32_4_Mul_Output[3:0], reg1, reg2};
 
   ALUControl ALUControl_0
        (.ALUControl(ALUControl_0_ALUControl),
@@ -84,7 +87,10 @@ module top
        (.BranchControl_Input_Type(Control_0_Branch),
         .Sign_in(ALU_0_ALU_Output_Sign),
         .Zero_in(ALU_0_ALU_Output_Zero),
-        .BranchControl_Output_Exec_Branch(BranchConctrol_0_Output_Exec_Branch));
+        .BranchControl_Output_Exec_Branch(BranchConctrol_0_Output_Exec_Branch),
+        .Branch_Addr_in(Add32_0_Add_Output),
+        .Jr_Addr_in(ALU_0_ALU_Output_Result),
+        .Branch_Addr_out(BranchConctrol_0_Branch_Addr_out));
   Control Control_0
        (.ALUOp(Control_0_ALUOp),
         .ALUSrc(Control_0_ALUSrc),
@@ -99,7 +105,8 @@ module top
         .RegWrite(Control_0_RegWrite),
         .PCWrite(Control_0_PCWrite),
         .ZeroExt(Control_0_ZeroExt),
-        .ReadShamt(Control_0_ReadShamt));
+        .ReadShamt(Control_0_ReadShamt),
+        .SaveRa(Control_0_SaveRa));
   DataMem DataMem_0
        (.Addr(ALU_0_ALU_Output_Result),
         .CLK(CLK_top),
@@ -114,42 +121,49 @@ module top
        (.Instr_27_2(ShiftLeft2_0_Output[27:2]),
         .JumpAddr(JumpAddrGen_0_JumpAddr),
         .PC_Plus_31_28(Add32_With_4_0_Add_With_4_Output[31:28]));
-  Mux32 Mux32_0
+  Mux32 Mux32_0 //Choose Alu Input 2
        (.Mul_Output(Mux32_0_Mul_Output),
         .Mul_Sel(Control_0_ALUSrc),
         .Mux_Input_1(RegFile_0_Read_Data_2),
         .Mux_Input_2(SignExt_0_Output_32));
-  Mux32 Mux32_1
-       (.Mul_Output(Mux32_1_Mul_Output),
+  MUX1in4_32 MUX1in4_32_0
+       (.Mul_Output(MUX1in4_32_0_Mul_Output),
         .Mul_Sel(Control_0_RegDst),
         .Mux_Input_1({27'b0,InstrMem_0_Instr[20:16]}),
-        .Mux_Input_2({27'b0,InstrMem_0_Instr[15:11]}));
-  Mux32 Mux32_2
+        .Mux_Input_2({27'b0,InstrMem_0_Instr[15:11]}),
+        .Mux_Input_3({32'd31}),
+        .Mux_Input_4({32'd0}));
+  Mux32 Mux32_2 //Determine branch or pc+4
        (.Mul_Output(Mux32_2_Mul_Output),
         .Mul_Sel(BranchConctrol_0_Output_Exec_Branch),
         .Mux_Input_1(Add32_With_4_0_Add_With_4_Output),
-        .Mux_Input_2(Add32_0_Add_Output));
-  Mux32 Mux32_3
+        .Mux_Input_2(BranchConctrol_0_Branch_Addr_out));
+  Mux32 Mux32_3 //Determine if jump
        (.Mul_Output(Mux32_3_Mul_Output),
         .Mul_Sel(Control_0_Jump),
         .Mux_Input_1(Mux32_2_Mul_Output),
         .Mux_Input_2(JumpAddrGen_0_JumpAddr));
-  Mux32 Mux32_4
+  Mux32 Mux32_4 //Choose Write Back Value 
        (.Mul_Output(Mux32_4_Mul_Output),
         .Mul_Sel(Control_0_MemtoReg),
         .Mux_Input_1(ALU_0_ALU_Output_Result),
         .Mux_Input_2(DataMem_0_Read_Data));
-  Mux32 Mux32_5
+  Mux32 Mux32_5 //ALu Input 1
        (.Mul_Output(Mux32_5_Mul_Output),
         .Mul_Sel(Control_0_ReadShamt),
         .Mux_Input_1(RegFile_0_Read_Data_1),
         .Mux_Input_2(SignExt_1_Output_32));
+  Mux32 Mux32_6 //Choose RegFile Write Data
+       (.Mul_Output(Mux32_6_Mul_Output),
+        .Mul_Sel(Control_0_SaveRa),
+        .Mux_Input_1(Mux32_4_Mul_Output),
+        .Mux_Input_2(Add32_With_4_0_Add_With_4_Output));
   PC PC_0
-       (.Next_IP(Mux32_3_Mul_Output),
+       (.Next_PC(Mux32_3_Mul_Output),
         .CLK(CLK_top),
         .Clear(Clear_top),
         .PCWrite(Control_0_PCWrite),
-        .This_IP(PC_0_This_IP));
+        .This_PC(PC_0_This_IP));
   RegFile RegFile_0
        (.CLK(CLK_top),
         .Clear(Clear_top),
@@ -158,10 +172,8 @@ module top
         .Read_Reg_1(InstrMem_0_Instr[25:21]),
         .Read_Reg_2(InstrMem_0_Instr[20:16]),
         .RegWrite_in(Control_0_RegWrite),
-        .Write_Data(Mux32_4_Mul_Output),
-        .Write_Reg(Mux32_1_Mul_Output[4:0]),
-        .reg1(reg1),
-        .reg2(reg2));
+        .Write_Data(Mux32_6_Mul_Output),
+        .Write_Reg(MUX1in4_32_0_Mul_Output[4:0]));
   ShiftLeft2 ShiftLeft2_0
        (.SL2_Input({6'b0,InstrMem_0_Instr[25:0]}),
         .SL2_Output(ShiftLeft2_0_Output));
