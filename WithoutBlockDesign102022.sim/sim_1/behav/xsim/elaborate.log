@@ -14,7 +14,9 @@ Compiling module xil_defaultlib.Add32_With_4
 Compiling module xil_defaultlib.BranchControl
 Compiling module xil_defaultlib.Control
 Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.DR
 Compiling module xil_defaultlib.InstrMem
+Compiling module xil_defaultlib.IR
 Compiling module xil_defaultlib.JumpAddrGen
 Compiling module xil_defaultlib.Mux32
 Compiling module xil_defaultlib.MUX1in4_32

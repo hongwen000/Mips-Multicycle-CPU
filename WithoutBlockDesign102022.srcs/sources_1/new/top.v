@@ -38,8 +38,14 @@ module top
   wire Control_0_ZeroExt;
   wire Control_0_ReadShamt;
   wire Control_0_SaveRa;
+  wire Control_0_IRWrite;
   wire [31:0]DataMem_0_Read_Data;
+  wire [31:0]DR_ADR_OUT;
+  wire [31:0]DR_BDR_OUT;
+  wire [31:0]DR_ALUoutDR_OUT;
+  wire [31:0]DR_DBDR_OUT;
   wire [31:0]InstrMem_0_Instr;
+  wire [31:0]IR_0_OUT;
   wire [31:0]JumpAddrGen_0_JumpAddr;
   wire [31:0]Mux32_0_Mul_Output;
   wire [31:0]MUX1in4_32_0_Mul_Output;
@@ -55,6 +61,7 @@ module top
   wire [31:0]ShiftLeft2_1_Output;
   wire [31:0]SignExt_0_Output_32;
   wire [31:0]SignExt_1_Output_32;
+
   //wire [3:0] reg1;
   //wire [3:0] reg2;
 
@@ -95,6 +102,8 @@ module top
        (.ALUOp(Control_0_ALUOp),
         .ALUSrc(Control_0_ALUSrc),
         .Branch(Control_0_Branch),
+        .CLK(CLK_top),
+        .Clear(Clear_top),
         .Funct(InstrMem_0_Instr[5:0]),
         .Instr(InstrMem_0_Instr[31:26]),
         .Jump(Control_0_Jump),
@@ -106,17 +115,39 @@ module top
         .PCWrite(Control_0_PCWrite),
         .ZeroExt(Control_0_ZeroExt),
         .ReadShamt(Control_0_ReadShamt),
-        .SaveRa(Control_0_SaveRa));
+        .SaveRa(Control_0_SaveRa),
+        .IRWrite(Control_0_IRWrite));
   DataMem DataMem_0
-       (.Addr(ALU_0_ALU_Output_Result),
+       (.Addr(DR_ALUoutDR_OUT),
         .CLK(CLK_top),
         .MemRead_in(Control_0_MemRead),
         .MemWrite_in(Control_0_MemWrite),
         .Read_Data(DataMem_0_Read_Data),
         .Write_Data(RegFile_0_Read_Data_2));
+  DR    DR_ADR
+       (.CLK(CLK_top),
+        .IN(RegFile_0_Read_Data_1),
+        .OUT(DR_ADR_OUT));
+  DR    DR_BDR
+       (.CLK(CLK_top),
+        .IN(RegFile_0_Read_Data_2),
+        .OUT(DR_BDR_OUT));
+  DR    DR_ALUoutDR
+       (.CLK(CLK_top),
+        .IN(ALU_0_ALU_Output_Result),
+        .OUT(DR_ALUoutDR_OUT));
+  DR    DR_DBDR
+       (.CLK(CLK_top),
+        .IN(Mux32_4_Mul_Output),
+        .OUT(DR_DBDR_OUT));
   InstrMem InstrMem_0
        (.Instr(InstrMem_0_Instr),
         .ReadAddr(PC_0_This_IP));
+  IR    IR_0
+       (.CLK(CLK_top),
+        .IRWrite_in(Control_0_IRWrite),
+        .IN(InstrMem_0_Instr),
+        .OUT(IR_0_OUT));
   JumpAddrGen JumpAddrGen_0
        (.Instr_27_2(ShiftLeft2_0_Output[27:2]),
         .JumpAddr(JumpAddrGen_0_JumpAddr),
@@ -124,13 +155,13 @@ module top
   Mux32 Mux32_0 //Choose Alu Input 2
        (.Mul_Output(Mux32_0_Mul_Output),
         .Mul_Sel(Control_0_ALUSrc),
-        .Mux_Input_1(RegFile_0_Read_Data_2),
+        .Mux_Input_1(DR_BDR_OUT),
         .Mux_Input_2(SignExt_0_Output_32));
   MUX1in4_32 MUX1in4_32_0
        (.Mul_Output(MUX1in4_32_0_Mul_Output),
         .Mul_Sel(Control_0_RegDst),
-        .Mux_Input_1({27'b0,InstrMem_0_Instr[20:16]}),
-        .Mux_Input_2({27'b0,InstrMem_0_Instr[15:11]}),
+        .Mux_Input_1({27'b0,IR_0_OUT[20:16]}),
+        .Mux_Input_2({27'b0,IR_0_OUT[15:11]}),
         .Mux_Input_3({32'd31}),
         .Mux_Input_4({32'd0}));
   Mux32 Mux32_2 //Determine branch or pc+4
@@ -151,12 +182,12 @@ module top
   Mux32 Mux32_5 //ALu Input 1
        (.Mul_Output(Mux32_5_Mul_Output),
         .Mul_Sel(Control_0_ReadShamt),
-        .Mux_Input_1(RegFile_0_Read_Data_1),
+        .Mux_Input_1(DR_ADR_OUT),
         .Mux_Input_2(SignExt_1_Output_32));
   Mux32 Mux32_6 //Choose RegFile Write Data
        (.Mul_Output(Mux32_6_Mul_Output),
         .Mul_Sel(Control_0_SaveRa),
-        .Mux_Input_1(Mux32_4_Mul_Output),
+        .Mux_Input_1(DR_DBDR_OUT),
         .Mux_Input_2(Add32_With_4_0_Add_With_4_Output));
   PC PC_0
        (.Next_PC(Mux32_3_Mul_Output),

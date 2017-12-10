@@ -6,7 +6,9 @@ verilog xil_defaultlib  \
 "../../../../WithoutBlockDesign102022.srcs/sources_1/imports/new/Add32_With_4.v" \
 "../../../../WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v" \
 "../../../../WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v" \
+"../../../../WithoutBlockDesign102022.srcs/sources_1/new/DR.v" \
 "../../../../WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v" \
+"../../../../WithoutBlockDesign102022.srcs/sources_1/new/IR.v" \
 "../../../../WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v" \
 "../../../../WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v" \
 "../../../../WithoutBlockDesign102022.srcs/sources_1/new/MUX1in4_32.v" \

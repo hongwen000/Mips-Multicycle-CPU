@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date             : Fri Nov 24 07:52:35 2017
+| Date             : Sun Dec 10 07:42:09 2017
 | Host             : DESKTOP-5Q0ADMK running 64-bit major release  (build 9200)
 | Command          : report_power -file UserInterface_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : UserInterface
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.324        |
+| Total On-Chip Power (W)  | 0.177        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.252        |
+| Dynamic (W)              | 0.105        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 83.4         |
-| Junction Temperature (C) | 26.6         |
+| Max Ambient (C)          | 84.1         |
+| Junction Temperature (C) | 25.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,17 +53,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.084 |    12317 |       --- |             --- |
-|   LUT as Logic |     0.082 |     6393 |     20800 |           30.74 |
-|   F7/F8 Muxes  |     0.002 |     1110 |     32600 |            3.40 |
-|   Register     |    <0.001 |     4101 |     41600 |            9.86 |
-|   CARRY4       |    <0.001 |       35 |      8150 |            0.43 |
+| Slice Logic    |     0.033 |    13174 |       --- |             --- |
+|   LUT as Logic |     0.032 |     7400 |     20800 |           35.58 |
+|   CARRY4       |    <0.001 |       47 |      8150 |            0.58 |
+|   Register     |    <0.001 |     4299 |     41600 |           10.33 |
+|   F7/F8 Muxes  |    <0.001 |     1119 |     32600 |            3.43 |
 |   BUFG         |    <0.001 |        3 |        32 |            9.38 |
-|   Others       |     0.000 |       20 |       --- |             --- |
-| Signals        |     0.141 |     9296 |       --- |             --- |
+|   Others       |     0.000 |       31 |       --- |             --- |
+| Signals        |     0.045 |     9296 |       --- |             --- |
 | I/O            |     0.026 |       18 |       106 |           16.98 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.324 |          |           |                 |
+| Total          |     0.177 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.237 |       0.227 |      0.010 |
+| Vccint    |       1.000 |     0.089 |       0.079 |      0.010 |
 | Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 |
 | Vcco33    |       3.300 |     0.008 |       0.007 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -142,18 +142,25 @@ Table of Contents
 +--------------------+-----------+
 | Name               | Power (W) |
 +--------------------+-----------+
-| UserInterface      |     0.252 |
+| UserInterface      |     0.105 |
 |   Display_7Seg_0   |    <0.001 |
 |   Input_OBtn_0     |    <0.001 |
 |   Input_OBtn_1     |    <0.001 |
 |   clk_slow_0       |    <0.001 |
-|   top_0            |     0.223 |
+|   top_0            |     0.076 |
 |     ALU_0          |    <0.001 |
 |     Add32_0        |    <0.001 |
-|     Add32_With_4_0 |    <0.001 |
-|     DataMem_0      |     0.017 |
-|     PC_0           |     0.163 |
-|     RegFile_0      |     0.031 |
+|     Add32_With_4_0 |     0.010 |
+|     Control_0      |     0.003 |
+|     DR_ADR         |     0.001 |
+|     DR_ALUoutDR    |     0.025 |
+|     DR_BDR         |    <0.001 |
+|     DR_DBDR        |     0.004 |
+|     DataMem_0      |     0.006 |
+|     IR_0           |     0.007 |
+|     MUX1in4_32_0   |    <0.001 |
+|     PC_0           |     0.004 |
+|     RegFile_0      |     0.009 |
 +--------------------+-----------+
 
 

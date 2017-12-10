@@ -16,6 +16,10 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param synth.incrementalSynthesisCache C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/.Xil/Vivado-12256-DESKTOP-5Q0ADMK/incrSyn
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -35,11 +39,14 @@ read_verilog -library xil_defaultlib {
   C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v
   C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v
   C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/DR.v
   C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v
   C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/IR.v
   C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/Input_OBtn.v
   C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v
   C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v
+  C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/MUX1in4_32.v
   C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Mux32.v
   C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/PC.v
   C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/RegFile.v

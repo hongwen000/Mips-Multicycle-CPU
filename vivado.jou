@@ -117,3 +117,77 @@ close_sim
 launch_simulation
 open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav2.wcfg
 source test.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav2.wcfg
+source test.tcl
+create_wave_config; add_wave /; set_property needs_save false [current_wave_config]
+save_wave_config {C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav3_multicycle.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav3_multicycle.wcfg
+set_property xsim.view {C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav.wcfg C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav1.wcfg C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav2.wcfg C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav3_multicycle.wcfg} [get_filesets sim_1]
+relaunch_sim
+save_wave_config {C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav3_multicycle.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav2.wcfg
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav3_multicycle.wcfg
+source test.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav2.wcfg
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav3_multicycle.wcfg
+source test.tcl
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+save_wave_config {C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav3_multicycle.wcfg}
+close_sim
+launch_simulation
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/DR.v w ]
+add_files C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/DR.v
+close [ open C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/IR.v w ]
+add_files C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/IR.v
+update_compile_order -fileset sources_1
+launch_simulation
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+launch_simulation
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav2.wcfg
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav3_multicycle.wcfg
+source test.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav2.wcfg
+open_wave_config C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav3_multicycle.wcfg
+source test.tcl
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.runs/impl_1/UserInterface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+save_wave_config {C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/test_behav3_multicycle.wcfg}
+close_sim
