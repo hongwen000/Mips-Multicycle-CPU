@@ -2,8 +2,8 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Sun Dec 10 07:38:32 2017
-# Process ID: 19648
+# Start of session at: Sat Dec 16 15:09:16 2017
+# Process ID: 10128
 # Current directory: C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.runs/synth_1
 # Command line: vivado.exe -log UserInterface.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source UserInterface.tcl
 # Log file: C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.runs/synth_1/UserInterface.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 23040 
+INFO: Helper process launched with PID 15752 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 332.770 ; gain = 102.113
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 332.867 ; gain = 101.852
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'UserInterface' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v:23]
 INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/top.v:12]
@@ -33,8 +33,8 @@ INFO: [Synth 8-638] synthesizing module 'BranchControl' [C:/Users/lixin/Desktop/
 INFO: [Synth 8-256] done synthesizing module 'BranchControl' (5#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/BranchControl.v:23]
 INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:52]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:84]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:171]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:191]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:174]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:194]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:145]
 INFO: [Synth 8-256] done synthesizing module 'Control' (6#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:52]
 INFO: [Synth 8-638] synthesizing module 'DataMem' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/DataMem.v:23]
@@ -51,6 +51,7 @@ INFO: [Synth 8-638] synthesizing module 'InstrMem' [C:/Users/lixin/Desktop/MipsS
 INFO: [Synth 8-3876] $readmem data file 'D:/rom.txt' is read successfully [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v:31]
 INFO: [Synth 8-256] done synthesizing module 'InstrMem' (9#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/InstrMem.v:23]
 INFO: [Synth 8-638] synthesizing module 'IR' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/IR.v:23]
+WARNING: [Synth 8-5788] Register OUT_reg in module IR is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/IR.v:33]
 INFO: [Synth 8-256] done synthesizing module 'IR' (10#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/IR.v:23]
 INFO: [Synth 8-638] synthesizing module 'JumpAddrGen' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v:23]
 INFO: [Synth 8-256] done synthesizing module 'JumpAddrGen' (11#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/JumpAddrGen.v:23]
@@ -108,7 +109,7 @@ INFO: [Synth 8-226] default block is never used [C:/Users/lixin/Desktop/MipsSing
 INFO: [Synth 8-256] done synthesizing module 'Display_7Seg' (21#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:23]
 INFO: [Synth 8-256] done synthesizing module 'UserInterface' (22#1) [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/UserInterface.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 409.742 ; gain = 179.086
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 410.078 ; gain = 179.063
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -118,7 +119,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 409.742 ; gain = 179.086
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 410.078 ; gain = 179.063
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -137,22 +138,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 757.117 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 756.469 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 757.117 ; gain = 526.461
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 756.469 ; gain = 525.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 757.117 ; gain = 526.461
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 756.469 ; gain = 525.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 757.117 ; gain = 526.461
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 756.469 ; gain = 525.453
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5587] ROM size for "ALUControl" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'Control'
@@ -160,11 +161,10 @@ INFO: [Synth 8-5546] ROM "IRWrite" won't be mapped to RAM because it is too spar
 INFO: [Synth 8-5546] ROM "IRWrite" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "SaveRa" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ReadShamt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCWrite" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "Jump" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ALUOp" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "Branch" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "MemtoReg" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -202,7 +202,7 @@ INFO: [Synth 8-5546] ROM "impl_reg_reg[29]" won't be mapped to RAM because it is
 INFO: [Synth 8-5546] ROM "impl_reg_reg[30]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "impl_reg_reg[31]" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/CLK_slow.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:149]
+WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:154]
 WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:85]
 WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:85]
 ---------------------------------------------------------------------------------------------------
@@ -216,21 +216,21 @@ WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/Users/l
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'Control'
 WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:85]
-WARNING: [Synth 8-327] inferring latch for variable 'Jump_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:149]
-WARNING: [Synth 8-327] inferring latch for variable 'Branch_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:149]
-WARNING: [Synth 8-327] inferring latch for variable 'MemRead_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:149]
-WARNING: [Synth 8-327] inferring latch for variable 'MemtoReg_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:149]
-WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:149]
-WARNING: [Synth 8-327] inferring latch for variable 'MemWrite_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:149]
-WARNING: [Synth 8-327] inferring latch for variable 'ALUSrc_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:149]
-WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:149]
-WARNING: [Synth 8-327] inferring latch for variable 'IRWrite_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:149]
-WARNING: [Synth 8-327] inferring latch for variable 'ZeroExt_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:149]
-WARNING: [Synth 8-327] inferring latch for variable 'ReadShamt_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:149]
-WARNING: [Synth 8-327] inferring latch for variable 'SaveRa_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:149]
+WARNING: [Synth 8-327] inferring latch for variable 'Jump_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:154]
+WARNING: [Synth 8-327] inferring latch for variable 'Branch_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:154]
+WARNING: [Synth 8-327] inferring latch for variable 'MemRead_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:154]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:154]
+WARNING: [Synth 8-327] inferring latch for variable 'MemWrite_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:154]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrc_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:154]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:154]
+WARNING: [Synth 8-327] inferring latch for variable 'PCWrite_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:154]
+WARNING: [Synth 8-327] inferring latch for variable 'ZeroExt_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:154]
+WARNING: [Synth 8-327] inferring latch for variable 'ReadShamt_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:154]
+WARNING: [Synth 8-327] inferring latch for variable 'SaveRa_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:154]
+WARNING: [Synth 8-327] inferring latch for variable 'IRWrite_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/imports/new/Control.v:154]
 WARNING: [Synth 8-327] inferring latch for variable 'Segment_reg' [C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.srcs/sources_1/new/Display_7Seg.v:58]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 757.117 ; gain = 526.461
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 756.469 ; gain = 525.453
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -258,7 +258,7 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 102   
+	   2 Input     32 Bit        Muxes := 104   
 	   4 Input     32 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 1     
 	   4 Input     16 Bit        Muxes := 1     
@@ -274,11 +274,11 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit        Muxes := 3     
 	   5 Input      2 Bit        Muxes := 3     
 	   4 Input      2 Bit        Muxes := 8     
-	   2 Input      1 Bit        Muxes := 161   
+	   2 Input      1 Bit        Muxes := 159   
 	   6 Input      1 Bit        Muxes := 1     
-	  10 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 3     
 	   3 Input      1 Bit        Muxes := 2     
-	   5 Input      1 Bit        Muxes := 112   
+	   5 Input      1 Bit        Muxes := 114   
 	   4 Input      1 Bit        Muxes := 32    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -330,10 +330,10 @@ Detailed RTL Component Info :
 	  10 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 	   5 Input      2 Bit        Muxes := 3     
-	  10 Input      1 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 6     
+	  10 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
 	   3 Input      1 Bit        Muxes := 2     
-	   5 Input      1 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 18    
 Module DataMem 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -347,6 +347,10 @@ Module InstrMem
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      7 Bit       Adders := 3     
+Module IR 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
 Module Mux32 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -469,28 +473,6 @@ WARNING: [Synth 8-3332] Sequential element (top_0/DR_ALUoutDR/OUT_reg[10]) is un
 WARNING: [Synth 8-3332] Sequential element (top_0/DR_ALUoutDR/OUT_reg[9]) is unused and will be removed from module UserInterface.
 WARNING: [Synth 8-3332] Sequential element (top_0/DR_ALUoutDR/OUT_reg[8]) is unused and will be removed from module UserInterface.
 WARNING: [Synth 8-3332] Sequential element (top_0/DR_ALUoutDR/OUT_reg[7]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[31]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[30]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[29]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[28]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[27]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[26]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[25]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[24]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[23]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[22]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[21]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[10]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[9]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[8]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[7]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[6]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[5]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[4]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[3]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[2]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[1]) is unused and will be removed from module UserInterface.
-WARNING: [Synth 8-3332] Sequential element (top_0/IR_0/OUT_reg[0]) is unused and will be removed from module UserInterface.
 WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[31]) is unused and will be removed from module UserInterface.
 WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[30]) is unused and will be removed from module UserInterface.
 WARNING: [Synth 8-3332] Sequential element (top_0/PC_0/This_PC_reg_rep[29]) is unused and will be removed from module UserInterface.
@@ -520,7 +502,7 @@ WARNING: [Synth 8-3332] Sequential element (top_0/Control_0/ALUOp_reg[3]) is unu
 WARNING: [Synth 8-3332] Sequential element (Display_7Seg_0/Segment_reg[7]) is unused and will be removed from module UserInterface.
 INFO: [Synth 8-3886] merging instance 'top_0/Control_0/SaveRa_reg' (LD) to 'top_0/Control_0/RegDst_reg[1]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 757.117 ; gain = 526.461
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 756.469 ; gain = 525.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -553,13 +535,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 812.801 ; gain = 582.145
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 815.555 ; gain = 584.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 840.910 ; gain = 610.254
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 843.742 ; gain = 612.727
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -571,7 +553,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 952.035 ; gain = 721.379
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 967.504 ; gain = 736.488
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -595,7 +577,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 952.035 ; gain = 721.379
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 967.504 ; gain = 736.488
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -608,7 +590,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 952.035 ; gain = 721.379
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 967.504 ; gain = 736.488
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -620,25 +602,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 952.035 ; gain = 721.379
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 967.504 ; gain = 736.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 952.035 ; gain = 721.379
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 967.504 ; gain = 736.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 952.035 ; gain = 721.379
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 967.504 ; gain = 736.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 952.035 ; gain = 721.379
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 967.504 ; gain = 736.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -656,19 +638,19 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     4|
 |2     |CARRY4 |    47|
-|3     |LUT1   |     4|
-|4     |LUT2   |   110|
-|5     |LUT3   |  1164|
-|6     |LUT4   |   267|
-|7     |LUT5   |  1443|
-|8     |LUT6   |  4689|
-|9     |MUXF7  |   863|
+|3     |LUT1   |    12|
+|4     |LUT2   |   159|
+|5     |LUT3   |  1222|
+|6     |LUT4   |   171|
+|7     |LUT5   |  1470|
+|8     |LUT6   |  4709|
+|9     |MUXF7  |   864|
 |10    |MUXF8  |   256|
-|11    |FDCE   |  1034|
-|12    |FDPE   |   992|
-|13    |FDRE   |  1246|
-|14    |LD     |    28|
-|15    |LDC    |   992|
+|11    |FDCE   |  1066|
+|12    |FDPE   |  1024|
+|13    |FDRE   |  1237|
+|14    |LD     |    27|
+|15    |LDC    |  1024|
 |16    |LDP    |     7|
 |17    |IBUF   |     6|
 |18    |OBUF   |    12|
@@ -678,48 +660,47 @@ Report Instance Areas:
 +------+-------------------+-------------+------+
 |      |Instance           |Module       |Cells |
 +------+-------------------+-------------+------+
-|1     |top                |             | 13164|
+|1     |top                |             | 13317|
 |2     |  Display_7Seg_0   |Display_7Seg |    35|
 |3     |  Input_OBtn_0     |Input_OBtn   |     6|
-|4     |  Input_OBtn_1     |Input_OBtn_0 |    38|
+|4     |  Input_OBtn_1     |Input_OBtn_0 |    88|
 |5     |  clk_slow_0       |clk_slow     |    50|
-|6     |  top_0            |top          | 12996|
+|6     |  top_0            |top          | 13099|
 |7     |    ALU_0          |ALU          |    15|
 |8     |    Add32_0        |Add32        |     8|
 |9     |    Add32_With_4_0 |Add32_With_4 |    39|
-|10    |    Control_0      |Control      |   433|
-|11    |    DR_ADR         |DR           |    99|
+|10    |    Control_0      |Control      |   214|
+|11    |    DR_ADR         |DR           |   125|
 |12    |    DR_ALUoutDR    |DR_1         |   853|
-|13    |    DR_BDR         |DR_2         |    42|
+|13    |    DR_BDR         |DR_2         |    34|
 |14    |    DR_DBDR        |DR_3         |    32|
-|15    |    DataMem_0      |DataMem      |  2951|
-|16    |    IR_0           |IR           |  2077|
-|17    |    MUX1in4_32_0   |MUX1in4_32   |    67|
-|18    |    PC_0           |PC           |   395|
-|19    |    RegFile_0      |RegFile      |  3969|
+|15    |    DataMem_0      |DataMem      |  2957|
+|16    |    IR_0           |IR           |  2669|
+|17    |    PC_0           |PC           |   177|
+|18    |    RegFile_0      |RegFile      |  3960|
 +------+-------------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 952.035 ; gain = 721.379
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 967.504 ; gain = 736.488
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 118 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:01:06 . Memory (MB): peak = 952.035 ; gain = 374.004
-Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 952.035 ; gain = 721.379
+Synthesis finished with 0 errors, 0 critical warnings and 96 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:06 . Memory (MB): peak = 967.504 ; gain = 390.098
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 967.504 ; gain = 736.488
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 2199 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 2231 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 7 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1027 instances were transformed.
-  LD => LDCE: 28 instances
-  LDC => LDCE: 992 instances
+  A total of 1058 instances were transformed.
+  LD => LDCE: 27 instances
+  LDC => LDCE: 1024 instances
   LDP => LDPE (inverted pins: G): 7 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-121 Infos, 151 Warnings, 1 Critical Warnings and 0 Errors encountered.
+120 Infos, 130 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 952.035 ; gain = 725.957
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 967.504 ; gain = 740.813
 INFO: [Common 17-1381] The checkpoint 'C:/Users/lixin/Desktop/MipsSingleCycleCPU_evil/WithoutBlockDesign102022.runs/synth_1/UserInterface.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file UserInterface_utilization_synth.rpt -pb top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 952.035 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Dec 10 07:40:01 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 967.504 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 16 15:10:42 2017...

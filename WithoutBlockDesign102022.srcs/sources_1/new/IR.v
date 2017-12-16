@@ -22,13 +22,19 @@
 
 module IR(
     input IRWrite_in,
+    input Clear,
     input [31:0] IN,
     output reg[31:0] OUT,
     input CLK
     );
-    always @(negedge CLK) 
+    always @(negedge CLK or negedge Clear) 
     begin
-        if(IRWrite_in)
+        if(Clear)
             OUT = IN;
+        else
+        begin
+            if(IRWrite_in)
+                OUT = IN;
+        end
     end
 endmodule

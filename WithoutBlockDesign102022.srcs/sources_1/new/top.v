@@ -75,7 +75,7 @@ module top
   ALUControl ALUControl_0
        (.ALUControl(ALUControl_0_ALUControl),
         .ALUOp_in(Control_0_ALUOp),
-        .Func(InstrMem_0_Instr[5:0]));
+        .Func(IR_0_OUT[5:0]));
   ALU ALU_0
        (.ALU_Control_in(ALUControl_0_ALUControl),
         .ALU_Input_1(Mux32_5_Mul_Output),
@@ -104,8 +104,8 @@ module top
         .Branch(Control_0_Branch),
         .CLK(CLK_top),
         .Clear(Clear_top),
-        .Funct(InstrMem_0_Instr[5:0]),
-        .Instr(InstrMem_0_Instr[31:26]),
+        .Funct(IR_0_OUT[5:0]),
+        .Instr(IR_0_OUT[31:26]),
         .Jump(Control_0_Jump),
         .MemRead(Control_0_MemRead),
         .MemWrite(Control_0_MemWrite),
@@ -145,6 +145,7 @@ module top
         .ReadAddr(PC_0_This_IP));
   IR    IR_0
        (.CLK(CLK_top),
+        .Clear(Clear_top),
         .IRWrite_in(Control_0_IRWrite),
         .IN(InstrMem_0_Instr),
         .OUT(IR_0_OUT));
@@ -200,23 +201,23 @@ module top
         .Clear(Clear_top),
         .Read_Data_1(RegFile_0_Read_Data_1),
         .Read_Data_2(RegFile_0_Read_Data_2),
-        .Read_Reg_1(InstrMem_0_Instr[25:21]),
-        .Read_Reg_2(InstrMem_0_Instr[20:16]),
+        .Read_Reg_1(IR_0_OUT[25:21]),
+        .Read_Reg_2(IR_0_OUT[20:16]),
         .RegWrite_in(Control_0_RegWrite),
         .Write_Data(Mux32_6_Mul_Output),
         .Write_Reg(MUX1in4_32_0_Mul_Output[4:0]));
   ShiftLeft2 ShiftLeft2_0
-       (.SL2_Input({6'b0,InstrMem_0_Instr[25:0]}),
+       (.SL2_Input({6'b0,IR_0_OUT[25:0]}),
         .SL2_Output(ShiftLeft2_0_Output));
   ShiftLeft2 ShiftLeft2_1
        (.SL2_Input(SignExt_0_Output_32),
         .SL2_Output(ShiftLeft2_1_Output));
   SignExt SignExt_0
-       (.Input_16(InstrMem_0_Instr[15:0]),
+       (.Input_16(IR_0_OUT[15:0]),
         .Input_Zero_Ext(Control_0_ZeroExt),
         .Output_32(SignExt_0_Output_32));
   SignExt SignExt_1
-       (.Input_16({11'b0,InstrMem_0_Instr[10:6]}),
+       (.Input_16({11'b0,IR_0_OUT[10:6]}),
         .Input_Zero_Ext(Control_0_ZeroExt),
         .Output_32(SignExt_1_Output_32));
 endmodule

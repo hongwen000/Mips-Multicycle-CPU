@@ -145,10 +145,13 @@ module Control(
         case(curr_state)
             `sIF: 
             begin
-                if(Instr != `OP_HALT)
-                    {`CONTROL_SINGLES} = 21'b00_0_0_0_0_0_0000_0000_0_1_0_0_0_1;
-                else
+            /*
+                if(Instr == `OP_HALT)
                     {`CONTROL_SINGLES} = 21'b00_0_0_0_0_0_0000_0000_0_0_0_0_0_0;
+                else
+                    {`CONTROL_SINGLES} = 21'b00_0_0_0_0_0_0000_0000_0_1_0_0_0_1;
+            */
+            {`CONTROL_SINGLES} = 21'b00_0_0_0_0_0_0000_0000_0_0_0_0_0_1;
             end
             `sID:
             begin
@@ -156,12 +159,12 @@ module Control(
                 `OP_RTPYE:
                 begin
                     case(Funct)
-                        `FUNCT_JR: {`CONTROL_SINGLES} = 21'b01_0_0_0_0_0_0100_0010_0_0_0_0_0_0;
+                        `FUNCT_JR: {`CONTROL_SINGLES} = 21'b01_0_0_0_0_0_0100_0010_0_1_0_0_0_0;
                         default:   {`CONTROL_SINGLES} = 21'b00_0_0_0_0_0_0000_0000_0_0_0_0_0_0;
                     endcase
                 end
-                `OP_J:   	{`CONTROL_SINGLES} =	21'b00_0_0_0_0_0_0000_0000_1_0_0_0_0_0;			
-                `OP_JAL: 	{`CONTROL_SINGLES} =	21'b10_0_0_1_0_0_0000_0000_1_0_0_0_1_0;			
+                `OP_J:   	{`CONTROL_SINGLES} =	21'b00_0_0_0_0_0_0000_0000_1_1_0_0_0_0;			
+                `OP_JAL: 	{`CONTROL_SINGLES} =	21'b10_0_0_1_0_0_0000_0000_1_1_0_0_1_0;			
                 `OP_HALT:	{`CONTROL_SINGLES} =	21'b00_0_0_0_0_0_0000_0000_0_0_0_0_0_0;
                 default:    {`CONTROL_SINGLES} =    21'b00_0_0_0_0_0_0000_0000_0_0_0_0_0_0;
                 endcase
@@ -169,9 +172,9 @@ module Control(
             `sEXE:
             begin
                 case(Instr)
-                    `OP_BEQ:    {`CONTROL_SINGLES} =	21'b00_0_0_0_0_0_0001_0001_0_0_0_0_0_0;
-                    `OP_BNE: 	{`CONTROL_SINGLES} =	21'b00_0_0_0_0_0_0010_0001_0_0_0_0_0_0;
-                    `OP_BGTZ:	{`CONTROL_SINGLES} =	21'b00_0_0_0_0_0_0011_0011_0_0_0_0_0_0;
+                    `OP_BEQ:    {`CONTROL_SINGLES} =	21'b00_0_0_0_0_0_0001_0001_0_1_0_0_0_0;
+                    `OP_BNE: 	{`CONTROL_SINGLES} =	21'b00_0_0_0_0_0_0010_0001_0_1_0_0_0_0;
+                    `OP_BGTZ:	{`CONTROL_SINGLES} =	21'b00_0_0_0_0_0_0011_0011_0_1_0_0_0_0;
                     `OP_LW:     {`CONTROL_SINGLES} =    21'b00_1_0_0_0_0_0000_0000_0_0_0_0_0_0; //No mem read
                     `OP_SW:     {`CONTROL_SINGLES} =	21'b00_1_0_0_0_0_0000_0000_0_0_0_0_0_0; //No mem write
                     `OP_RTPYE:
@@ -189,15 +192,18 @@ module Control(
             `sMEM:
             begin
                 case(Instr)
-                    `OP_SW:     {`CONTROL_SINGLES} =    21'b00_0_0_0_0_1_0000_0000_0_0_0_0_0_0;    
-                    `OP_LW:     {`CONTROL_SINGLES} =    21'b00_0_0_0_1_0_0000_0000_0_0_0_0_0_0;
+                    `OP_SW:     {`CONTROL_SINGLES} =    21'b00_0_0_0_0_1_0000_0000_0_1_0_0_0_0;    
+                    `OP_LW:     {`CONTROL_SINGLES} =    21'b00_0_1_0_1_0_0000_0000_0_0_0_0_0_0;
                 endcase
             end
             `sWB:
             begin
                 case(Instr)
-                    `OP_LW:     {`CONTROL_SINGLES} =    21'b00_0_1_1_0_0_0000_0000_0_0_0_0_0_0; 
-                    default:    {`CONTROL_SINGLES} =    21'b01_0_0_1_0_0_0000_0000_0_0_0_0_0_0;
+                    `OP_LW:     {`CONTROL_SINGLES} =    21'b00_0_0_1_0_0_0000_0000_0_1_0_0_0_0; 
+                    `OP_ADDI:   {`CONTROL_SINGLES} =    21'b00_0_0_1_0_0_0000_0000_0_1_0_0_0_0;   
+                    `OP_ORI:    {`CONTROL_SINGLES} =    21'b00_0_0_1_0_0_0000_0000_0_1_0_0_0_0;
+                    `OP_SLTI:   {`CONTROL_SINGLES} =    21'b00_0_0_1_0_0_0000_0000_0_1_0_0_0_0;
+                    default:    {`CONTROL_SINGLES} =    21'b01_0_0_1_0_0_0000_0000_0_1_0_0_0_0;
                 endcase
             end
         endcase

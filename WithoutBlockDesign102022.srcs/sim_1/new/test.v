@@ -31,7 +31,7 @@ module test(
         #50 Clear_test = 0;
         #50
         forever #10 CLK_test = ~CLK_test;
-        #500 $stop;
+        #2000 $stop;
     end
     //always
     //begin

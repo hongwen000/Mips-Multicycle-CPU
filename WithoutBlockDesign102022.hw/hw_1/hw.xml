@@ -10,7 +10,7 @@
       <Properties Property="FULL_PROBES.FILE" value=""/>
       <Properties Property="PROBES.FILE" value=""/>
       <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/UserInterface.bit"/>
-      <Properties Property="SLR.COUNT" value="1"/>
+      <Properties Property="SLR.COUNT" value="C:/Users/lixin/AppData/Roaming/Xilinx/Vivado/1"/>
     </Object>
     <Object name="xc7a35t_0_1" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value=""/>
